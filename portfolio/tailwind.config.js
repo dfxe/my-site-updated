@@ -12,14 +12,14 @@ module.exports = {
     },
     colors: {
       background: "#222",
-      "card-primary": "#fafafa",
+      "card-primary": "#f4f6f6",
       "card-secondary": "#f7ebe1",
       transparent: "transparent",
       pink: "rgb(244 114 182)",
       red: "rgb(220 38 38)",
       peach: "#d18462",
       redpeach: "#c94c67",
-      "text-gradient-primary": "#fafafa",
+      "text-gradient-primary": "#f7ebe1",
       "text-gradient-secondary": "#faaa",
     },
     fontFamily: {

@@ -4,6 +4,7 @@ import Card from "../Card/Card";
 //@ts-ignore
 import Obfuscate from "react-obfuscate";
 import GithubIcon from "../../public/github.png";
+
 const ContactCard = () => {
   return (
     <Card dimensions={{ width: 72, height: 96 }}>
@@ -16,7 +17,7 @@ const ContactCard = () => {
       </h1>
       <br></br>
       <ul>
-        <li>
+        <li className="underline">
           <Obfuscate email="dfldev@proton.me" />{" "}
         </li>
         <li>

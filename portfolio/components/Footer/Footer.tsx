@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <div className="flex flex-col justify-center items-center text-base">
       <div className="flex row">
-        Copyright © 2022 &nbsp;
+        <div className="text-text-gradient-primary">
+          Copyright © 2022 &nbsp;
+        </div>
         <a
           href="https://www.github.com/ukruel"
           className="text-base font-extrabold text-transparent

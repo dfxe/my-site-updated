@@ -20,7 +20,7 @@ const ProjectCard = () => {
           <Image
             src={GamesVideo}
             alt="Gameplay from games I made."
-            height="560"
+            height="720"
             style={{
               border: "10px solid black",
               borderRadius: "15px",

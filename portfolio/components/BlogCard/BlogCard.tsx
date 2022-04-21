@@ -13,10 +13,10 @@ const BlogCard = () => {
       <br></br>
       <ul>
         <li>
-          <a href="">post1 WAZZAO</a>
+          <a href="/blog/p1">post1 WAZZAO</a>
         </li>
         <li>
-          <a href="">post1</a>
+          <a href="/blog/p2">post1</a>
         </li>
       </ul>
     </Card>
