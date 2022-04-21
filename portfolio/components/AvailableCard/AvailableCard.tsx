@@ -33,7 +33,7 @@ const AvailableCard = () => {
         <div className="text-4xl">{availabilityDates.currentMonth}</div>
         <div className="text-6xl">{availabilityDates.currentDay}</div>
       </div>
-
+      <br></br>
       <div
         className="text-center text-6xl font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br

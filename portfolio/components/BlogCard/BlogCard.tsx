@@ -3,10 +3,17 @@ import Card from "../Card/Card";
 const BlogCard = () => {
   return (
     <Card dimensions={{ width: 1, height: 1 }}>
-      BlogCard
+      <h1
+        className="text-2xl font-extrabold text-transparent text-center
+           bg-clip-text bg-gradient-to-br
+           from-pink to-red"
+      >
+        Posts
+      </h1>
+      <br></br>
       <ul>
         <li>
-          <a href="">post1</a>
+          <a href="">post1 WAZZAO</a>
         </li>
         <li>
           <a href="">post1</a>
