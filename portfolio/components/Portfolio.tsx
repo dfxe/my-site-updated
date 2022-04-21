@@ -22,7 +22,7 @@ const Portfolio = () => {
         </Card>
         <Card dimensions={{ width: 72, height: 72 }}>
           <div>
-            I'm{" "}
+            I&apos;m{" "}
             <span
               className="text-base font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br

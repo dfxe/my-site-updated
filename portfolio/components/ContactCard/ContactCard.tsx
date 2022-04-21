@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Card from "../Card/Card";
+//@ts-ignore
 import Obfuscate from "react-obfuscate";
 import GithubIcon from "../../public/github.png";
 const ContactCard = () => {
