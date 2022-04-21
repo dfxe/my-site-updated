@@ -20,7 +20,7 @@ const AvailableCard = () => {
     currentDay:
       new Date().getDate().toString().length === 1
         ? "0" + new Date().getDate().toString()
-        : new Date().getDate().toString(),
+        : new Date().getDate().toLocaleString(),
     currentMonth: monthNames[new Date().getMonth()]
       .substring(0, 3)
       .toLocaleUpperCase(),
@@ -29,12 +29,18 @@ const AvailableCard = () => {
 
   return (
     <Card dimensions={{ width: 72, height: 96 }}>
-      <div className="flex columns">
-        <div>{availabilityDates.currentMonth}</div>
-        <div>{availabilityDates.currentDay}</div>
+      <div className="flex flex-col justify-center items-center">
+        <div className="text-4xl">{availabilityDates.currentMonth}</div>
+        <div className="text-6xl">{availabilityDates.currentDay}</div>
       </div>
 
-      <div>{availabilityDates.availableNow}</div>
+      <div
+        className="text-center text-6xl font-extrabold text-transparent
+           bg-clip-text bg-gradient-to-br
+           from-pink to-red"
+      >
+        {availabilityDates.availableNow}
+      </div>
     </Card>
   );
 };

@@ -13,19 +13,27 @@ module.exports = {
     colors: {
       background: "#222",
       "card-primary": "#fafafa",
-      "card-secondary": "#faaa",
+      "card-secondary": "#f7ebe1",
+      transparent: "transparent",
+      pink: "rgb(244 114 182)",
+      red: "rgb(220 38 38)",
+      peach: "#d18462",
+      redpeach: "#c94c67",
+      "text-gradient-primary": "#fafafa",
+      "text-gradient-secondary": "#faaa",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
+
     extend: {
       spacing: {
         128: "32rem",
         144: "36rem",
       },
       borderRadius: {
-        "4xl": "2rem",
+        "apple-radius": "30px",
       },
     },
   },
