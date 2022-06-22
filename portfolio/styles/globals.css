@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  background-size: cover;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAF1JREFUGFcdi8EJwkAUBeflg0f1FsQmPNtl0k56cCENeFMsYVe+L1lPA8OMvp9iA1jg359q72K6lpAGkFF7PRwySZfQL9V1cWblMF7JEEOCnvPk8+XI6X6jRRB7uwFJcSR5L+GlKwAAAABJRU5ErkJggg==");
-} */
-
 html,
 body {
   background-color: theme("colors.background");
