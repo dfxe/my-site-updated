@@ -40,8 +40,8 @@ const Portfolio = () => {
   return (
     <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-2">
       <div className="inline-grid  gap-2">
-        <Card dimensions={{ width: 72, height: 12 }} rowSpan={"row-span-3"}>
-          <div className="text-6xl font-extrabold text-transparent text-center flex row">
+        <Card dimensions={{ width: 86, height: 12 }} rowSpan={"row-span-3"}>
+          <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
             <a
               href="https://patternbay.vercel.app"
               target="_blank"
@@ -53,7 +53,7 @@ const Portfolio = () => {
             </a>
           </div>
         </Card>
-        <Card dimensions={{ width: 72, height: 72 }}>
+        <Card dimensions={{ width: 86, height: 72 }} borderStyle={"border-b-2"}>
           <div>
             <h1 className="text-title">
               I&apos;m{" "}

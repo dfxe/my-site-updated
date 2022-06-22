@@ -7,12 +7,10 @@
   background-size: cover;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAF1JREFUGFcdi8EJwkAUBeflg0f1FsQmPNtl0k56cCENeFMsYVe+L1lPA8OMvp9iA1jg359q72K6lpAGkFF7PRwySZfQL9V1cWblMF7JEEOCnvPk8+XI6X6jRRB7uwFJcSR5L+GlKwAAAABJRU5ErkJggg==");
 } */
-html {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='38' height='38' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(233, 230, 228,1)'/%3E%3Cpath d='M-10 10h60v1h-60z' fill='%231a202c'/%3E%3Cpath d='M-30 10h1l-22 1h-1zM10 10h1l-22 1h-1zM50 10h1l-22 1h-1z' stroke-miterlimit='99' fill='rgba(252, 129, 129,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-}
+
 html,
 body {
-  /* background-color: theme("colors.background"); */
+  background-color: theme("colors.background");
 
   padding-top: 1vh;
   padding-bottom: 1vh;
