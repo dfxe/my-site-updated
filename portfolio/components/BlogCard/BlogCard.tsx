@@ -6,12 +6,14 @@ const BlogCard = () => {
     {
       id: nanoid(),
       date: "22.06.22",
+      path: "blog/p1",
       title: "Post One Coming",
       shortDescription: "Homebuilding part two",
     },
     {
       id: nanoid(),
       date: "22.06.22",
+      path: "blog/p2",
       title: "Post One Coming",
       shortDescription: "Distro avs?",
     },
@@ -32,9 +34,9 @@ const BlogCard = () => {
               <span>{i}&nbsp;</span>
               <span>{item.date}</span>
             </div>
-            <a href="/blog/p1">
+            <a href={item.path}>
               <h3
-                className="text-3xl bg-clip-text bg-gradient-to-br text-transparent
+                className="text-2xl bg-clip-text bg-gradient-to-br text-transparent
            from-pink to-red"
               >
                 {item.title}
