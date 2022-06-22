@@ -37,7 +37,7 @@ const Portfolio = () => {
     }
   }, 1000);
   return (
-    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-8">
+    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-12">
       <div className="inline-grid  gap-2">
         <Card
           dimensions={{ width: 86, height: 12 }}
@@ -58,12 +58,12 @@ const Portfolio = () => {
         </Card>
         <Card dimensions={{ width: 86, height: 72 }} borderStyle={"border-b-2"}>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-title">
+            <h1 className="text-5xl whitespace-nowrap mb-10">
               I&apos;m{" "}
               <span
-                className="text-title font-extrabold text-transparent
+                className="text-5xl whitespace-nowrap font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+           from-pink to-red pb-2"
               >
                 Dragos
               </span>{" "}

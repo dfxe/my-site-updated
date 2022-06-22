@@ -12,7 +12,7 @@ const ContactCard = () => {
       borderStyle={"lg:border-l-2 lg:border-r-2"}
     >
       <h1
-        className="text-title font-extrabold  text-center
+        className="text-title whitespace-nowrap font-extrabold  text-center
             mb-4"
       >
         Reach out

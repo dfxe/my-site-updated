@@ -16,7 +16,7 @@ const Card = ({
 }: Props) => {
   return (
     <div
-      className={`w-[${dimensions.width}] h-${dimensions.height} ${borderStyle} p-12 flex flex-col justify-center items-center
+      className={` ${borderStyle} p-8 flex flex-col justify-center items-center
        hover:drop-shadow-lg hover:scale-[1.05] transition duration-150 ease-in-out ${rowSpan}`}
     >
       {children}
