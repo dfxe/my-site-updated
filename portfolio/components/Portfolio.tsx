@@ -54,7 +54,7 @@ const Portfolio = () => {
           </div>
         </Card>
         <Card dimensions={{ width: 86, height: 72 }} borderStyle={"border-b-2"}>
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <h1 className="text-title">
               I&apos;m{" "}
               <span

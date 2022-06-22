@@ -19,7 +19,7 @@ const ContactCard = () => {
         Reach out
       </h1>
       <br></br>
-      <ul>
+      <ul className="flex flex-col items-center">
         <li className="underline">
           <Obfuscate email="dfldev@proton.me" />{" "}
         </li>
