@@ -45,9 +45,9 @@ const Portfolio = () => {
           borderStyle={"border-b-2"}
         >
           <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
-            <span className="absolute flex h-3 w-3">
+            <span className="absolute flex h-5 w-5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-peach opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-nextred"></span>
             </span>
             <a
               href="https://patternbay.vercel.app"

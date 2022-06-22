@@ -19,6 +19,7 @@ module.exports = {
       red: "rgb(220 38 38)",
       peach: "#d18462",
       redpeach: "#c94c67",
+      nextred: "#e95076",
       "text-gradient-primary": "#f7ebe1",
       "text-gradient-secondary": "#faaa",
     },
