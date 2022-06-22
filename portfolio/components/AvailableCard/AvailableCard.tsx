@@ -31,7 +31,7 @@ const AvailableCard = () => {
     <Card
       dimensions={{ width: 86, height: 24 }}
       isSecondary={false}
-      borderStyle="border-b-2 lg:border-l-2 lg:border-r-2 lg:border-b-2"
+      borderStyle="border-b-2 xl:border-l-2 xl:border-r-2 xl:border-b-2"
     >
       <div className="flex flex-col justify-center items-center">
         <div className="text-4xl">{availabilityDates.currentMonth}</div>

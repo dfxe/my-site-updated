@@ -12,17 +12,20 @@ const ContactCard = () => {
       borderStyle={"lg:border-l-2 lg:border-r-2"}
     >
       <h1
-        className="text-2xl font-extrabold text-transparent text-center
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+        className="text-title font-extrabold  text-center
+            mb-4"
       >
         Reach out
       </h1>
       <br></br>
       <ul className="flex flex-col items-center">
-        <li className="underline">
+        <li
+          className="mb-2 text-xl text-transparent bg-clip-text bg-gradient-to-br
+           from-pink to-red"
+        >
           <Obfuscate email="dfldev@proton.me" />{" "}
         </li>
+
         <li>
           <a
             href="https://github.com/uKruel"

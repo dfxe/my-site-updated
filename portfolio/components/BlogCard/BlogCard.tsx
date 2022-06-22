@@ -19,9 +19,8 @@ const BlogCard = () => {
   return (
     <Card dimensions={{ width: 1, height: 1 }} borderStyle="border-b-2">
       <h1
-        className="text-6xl font-extrabold text-transparent text-center
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red mb-20"
+        className="text-6xl font-extrabold text-center
+            mb-20"
       >
         Blog Posts
       </h1>
@@ -34,7 +33,12 @@ const BlogCard = () => {
               <span>{item.date}</span>
             </div>
             <a href="/blog/p1">
-              <h3 className="text-3xl">{item.title}</h3>
+              <h3
+                className="text-3xl bg-clip-text bg-gradient-to-br text-transparent
+           from-pink to-red"
+              >
+                {item.title}
+              </h3>
               <h4 className="text-xl">{item.shortDescription}</h4>
             </a>
             <br />

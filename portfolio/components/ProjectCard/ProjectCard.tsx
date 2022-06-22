@@ -11,9 +11,8 @@ const ProjectCard = () => {
       borderStyle={"border-b-2 lg:border-none"}
     >
       <h1
-        className="text-2xl font-extrabold text-transparent text-center
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+        className="text-title font-extrabold text-center
+           "
       >
         Projects
       </h1>

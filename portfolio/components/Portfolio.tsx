@@ -5,8 +5,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import ContactCard from "./ContactCard/ContactCard";
 import BlogCard from "./BlogCard/BlogCard";
 import Footer from "./Footer/Footer";
-import BrandLogo from "../public/BrandLogo";
-
+import PatternBayLogo from "../public/PatternBayLogo";
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
     try {
@@ -38,9 +37,13 @@ const Portfolio = () => {
     }
   }, 1000);
   return (
-    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-2">
+    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-8">
       <div className="inline-grid  gap-2">
-        <Card dimensions={{ width: 86, height: 12 }} rowSpan={"row-span-3"}>
+        <Card
+          dimensions={{ width: 86, height: 12 }}
+          rowSpan={"row-span-3"}
+          borderStyle={"border-b-2"}
+        >
           <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
             <a
               href="https://patternbay.vercel.app"
@@ -49,7 +52,7 @@ const Portfolio = () => {
               className="bg-clip-text bg-gradient-to-br 
            from-pink to-red"
             >
-              <BrandLogo></BrandLogo>
+              <PatternBayLogo />
             </a>
           </div>
         </Card>
@@ -65,7 +68,7 @@ const Portfolio = () => {
                 Dragos
               </span>{" "}
             </h1>
-            <p>
+            <p className="text-xl text-center">
               Front End developer based in London. Customers have relied on me
               for design and implementation.
             </p>
