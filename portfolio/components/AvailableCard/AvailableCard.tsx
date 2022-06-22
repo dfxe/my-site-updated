@@ -39,7 +39,7 @@ const AvailableCard = () => {
       </div>
       <br></br>
       <div
-        className="text-center text-6xl font-extrabold text-transparent
+        className="text-center text-4xl 2xl:text-6xl font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
            from-pink to-red"
       >

@@ -37,14 +37,18 @@ const Portfolio = () => {
     }
   }, 1000);
   return (
-    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-12">
-      <div className="inline-grid  gap-2">
+    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-16">
+      <div className="inline-grid gap-2">
         <Card
           dimensions={{ width: 86, height: 12 }}
           rowSpan={"row-span-3"}
           borderStyle={"border-b-2"}
         >
           <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
+            <span className="absolute flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-peach opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-red"></span>
+            </span>
             <a
               href="https://patternbay.vercel.app"
               target="_blank"
