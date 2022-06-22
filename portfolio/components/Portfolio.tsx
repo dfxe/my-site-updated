@@ -38,8 +38,8 @@ const Portfolio = () => {
     }
   }, 1000);
   return (
-    <div className="inline-grid grid-cols-1 lg:grid-cols-3 gap-2">
-      <div className="inline-grid grid-rows-2 grid-cols-1 gap-2">
+    <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-2">
+      <div className="inline-grid  gap-2">
         <Card dimensions={{ width: 72, height: 12 }} rowSpan={"row-span-3"}>
           <div className="text-6xl font-extrabold text-transparent text-center flex row">
             <a
