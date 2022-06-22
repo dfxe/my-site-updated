@@ -11,7 +11,7 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      background: "#222",
+      background: "#cbccd1",
       "card-primary": "#f4f6f6",
       "card-secondary": "#f7ebe1",
       transparent: "transparent",

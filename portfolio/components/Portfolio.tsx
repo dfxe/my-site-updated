@@ -37,29 +37,31 @@ const Portfolio = () => {
     }
   }, 1000);
   return (
-    <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-2">
+    <div className="inline-grid grid-cols-1 lg:grid-cols-3 gap-2">
       <AvailableCard />
       <div className="inline-grid grid-rows-2 grid-cols-1 gap-2">
         <Card dimensions={{ width: 72, height: 12 }} rowSpan={"row-span-3"}>
-          <h1
-            className="text-6xl font-extrabold text-transparent text-center
-           bg-clip-text bg-gradient-to-br 
+          <div className="text-6xl font-extrabold text-transparent text-center">
+            👋🏻
+            <h2
+              className="bg-clip-text bg-gradient-to-br 
            from-pink to-red"
-          >
-            👋🏻 Hello
-          </h1>
+            >
+              Hello
+            </h2>
+          </div>
         </Card>
         <Card dimensions={{ width: 72, height: 72 }}>
-          <div>
+          <h1 className="text-2xl">
             I&apos;m{" "}
             <span
-              className="text-base font-extrabold text-transparent
+              className="text-2xl font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
            from-pink to-red"
             >
               Dragos
             </span>{" "}
-          </div>
+          </h1>
           Reword this: Front End developer based in London. Customers have
           relied on me for design and implementation.
         </Card>
