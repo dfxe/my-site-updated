@@ -14,7 +14,7 @@ const ProjectCard = () => {
       >
         Projects
       </h1>
-      <br></br>
+
       <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="inline-grid grid-cols-1 lg:grid-cols-1 gap-4 border-8 rounded-apple-radius">
           <Image

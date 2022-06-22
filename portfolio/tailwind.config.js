@@ -11,7 +11,7 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      background: "#cbccd1",
+      background: "#e9e6e4",
       "card-primary": "#f4f6f6",
       "card-secondary": "#f7ebe1",
       transparent: "transparent",
@@ -34,6 +34,9 @@ module.exports = {
       },
       borderRadius: {
         "apple-radius": "30px",
+      },
+      fontSize: {
+        title: "3rem",
       },
     },
   },

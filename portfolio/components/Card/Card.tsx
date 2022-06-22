@@ -11,7 +11,7 @@ const Card = ({ children, dimensions, rowSpan, isSecondary = true }: Props) => {
     <div
       className={`w-${dimensions.width} h-${dimensions.height} ${
         isSecondary ? "bg-card-secondary" : "bg-card-primary"
-      } rounded-apple-radius p-8 ${rowSpan}`}
+      } rounded-apple-radius p-8 flex flex-col justify-center items-center hover:drop-shadow-md ${rowSpan}`}
     >
       {children}
     </div>

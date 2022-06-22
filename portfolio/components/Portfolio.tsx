@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import ContactCard from "./ContactCard/ContactCard";
 import BlogCard from "./BlogCard/BlogCard";
 import Footer from "./Footer/Footer";
+import BrandLogo from "../public/BrandLogo";
 
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
@@ -38,34 +39,40 @@ const Portfolio = () => {
   }, 1000);
   return (
     <div className="inline-grid grid-cols-1 lg:grid-cols-3 gap-2">
-      <AvailableCard />
       <div className="inline-grid grid-rows-2 grid-cols-1 gap-2">
         <Card dimensions={{ width: 72, height: 12 }} rowSpan={"row-span-3"}>
-          <div className="text-6xl font-extrabold text-transparent text-center">
-            👋🏻
-            <h2
+          <div className="text-6xl font-extrabold text-transparent text-center flex row">
+            <a
+              href="https://patternbay.vercel.app"
+              target="_blank"
+              rel="noreferrer noopener"
               className="bg-clip-text bg-gradient-to-br 
            from-pink to-red"
             >
-              Hello
-            </h2>
+              <BrandLogo></BrandLogo>
+            </a>
           </div>
         </Card>
         <Card dimensions={{ width: 72, height: 72 }}>
-          <h1 className="text-2xl">
-            I&apos;m{" "}
-            <span
-              className="text-2xl font-extrabold text-transparent
+          <div>
+            <h1 className="text-title">
+              I&apos;m{" "}
+              <span
+                className="text-title font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
            from-pink to-red"
-            >
-              Dragos
-            </span>{" "}
-          </h1>
-          Reword this: Front End developer based in London. Customers have
-          relied on me for design and implementation.
+              >
+                Dragos
+              </span>{" "}
+            </h1>
+            <p>
+              Front End developer based in London. Customers have relied on me
+              for design and implementation.
+            </p>
+          </div>
         </Card>
       </div>
+      <AvailableCard />
       <BlogCard />
       <ProjectCard />
       <ContactCard />

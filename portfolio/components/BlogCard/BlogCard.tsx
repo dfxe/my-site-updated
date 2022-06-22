@@ -13,7 +13,9 @@ const BlogCard = () => {
       <br></br>
       <ul>
         <li>
-          <a href="/blog/p1">Post One Coming</a>
+          <a href="/blog/p1" className="text-xl">
+            Post One Coming
+          </a>
         </li>
       </ul>
     </Card>
