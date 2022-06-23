@@ -28,11 +28,7 @@ const AvailableCard = () => {
   });
 
   return (
-    <Card
-      dimensions={{ width: 86, height: 24 }}
-      isSecondary={false}
-      borderStyle="border-b-2 xl:border-l-2 xl:border-r-2 xl:border-b-2"
-    >
+    <Card borderStyle="border-b-2 xl:border-l-2 xl:border-r-2 xl:border-b-2">
       <div className="flex flex-col justify-center items-center">
         <div className="text-4xl">{availabilityDates.currentMonth}</div>
         <div className="text-6xl">{availabilityDates.currentDay}</div>

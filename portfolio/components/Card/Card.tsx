@@ -2,18 +2,12 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  dimensions: { width: number; height: number };
+
   rowSpan?: string;
-  isSecondary?: boolean;
+
   borderStyle?: string;
 };
-const Card = ({
-  children,
-  dimensions,
-  rowSpan,
-  isSecondary = true,
-  borderStyle = "",
-}: Props) => {
+const Card = ({ children, rowSpan, borderStyle = "" }: Props) => {
   return (
     <div
       className={` ${borderStyle} p-1 xl:p-8 flex flex-col justify-center items-center

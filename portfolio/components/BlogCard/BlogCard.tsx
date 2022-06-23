@@ -19,7 +19,7 @@ const BlogCard = () => {
     },
   ];
   return (
-    <Card dimensions={{ width: 1, height: 1 }} borderStyle="border-b-2">
+    <Card borderStyle="border-b-2">
       <h1
         className="text-6xl font-extrabold text-center
             mb-20 whitespace-nowrap"

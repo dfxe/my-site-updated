@@ -6,10 +6,7 @@ import LaptopImage from "../../public/project-images/laptop-clipart.png";
 import GamesVideo from "../../public/project-images/games-video.gif";
 const ProjectCard = () => {
   return (
-    <Card
-      dimensions={{ width: 24, height: 96 }}
-      borderStyle={"border-b-2 lg:border-none"}
-    >
+    <Card borderStyle={"border-b-2 lg:border-none"}>
       <h1
         className="text-title font-extrabold text-center
            "

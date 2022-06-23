@@ -6,6 +6,7 @@ import ContactCard from "./ContactCard/ContactCard";
 import BlogCard from "./BlogCard/BlogCard";
 import Footer from "./Footer/Footer";
 import PatternBayLogo from "../public/PatternBayLogo";
+
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
     try {
@@ -39,16 +40,13 @@ const Portfolio = () => {
   return (
     <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-16">
       <div className="inline-grid gap-2">
-        <Card
-          dimensions={{ width: 86, height: 12 }}
-          rowSpan={"row-span-3"}
-          borderStyle={"border-b-2"}
-        >
+        <Card rowSpan={"row-span-3"} borderStyle={"border-b-2"}>
           <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
             <span className="absolute flex h-5 w-5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-peach opacity-75"></span>
               <span className="relative inline-flex rounded-full h-4 w-4 bg-nextred"></span>
             </span>
+
             <a
               href="https://patternbay.vercel.app"
               target="_blank"

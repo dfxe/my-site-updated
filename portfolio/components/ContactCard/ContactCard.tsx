@@ -7,10 +7,7 @@ import GithubIcon from "../../public/github.png";
 
 const ContactCard = () => {
   return (
-    <Card
-      dimensions={{ width: 86, height: 96 }}
-      borderStyle={"lg:border-l-2 lg:border-r-2"}
-    >
+    <Card borderStyle={"lg:border-l-2 lg:border-r-2"}>
       <h1 className="text-title whitespace-normal lg:whitespace-nowrap font-extrabold  text-center mb-4">
         Reach out
       </h1>
