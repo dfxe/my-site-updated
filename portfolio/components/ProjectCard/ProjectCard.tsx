@@ -7,13 +7,8 @@ import GamesVideo from "../../public/project-images/games-video.gif";
 const ProjectCard = () => {
   return (
     <Card borderStyle={"border-b-2 lg:border-none"}>
-      <h1
-        className="text-title font-extrabold text-center
-           "
-      >
-        Projects
-      </h1>
-
+      <h1 className="text-title font-extrabold text-center">Projects</h1>
+      {/* TODO Should be better. */}
       {/* <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="inline-grid grid-cols-1 lg:grid-cols-1 gap-4 border-8 rounded-apple-radius">
           <Image

@@ -40,7 +40,7 @@ const Portfolio = () => {
   return (
     <div className="inline-grid grid-cols-1 xl:grid-cols-3 gap-16">
       <div className="inline-grid gap-2">
-        <Card rowSpan={"row-span-3"} borderStyle={"border-b-2"}>
+        <Card borderStyle={"border-b-2"}>
           <div className="text-6xl font-extrabold text-transparent text-center flex flex-col justify-center items-center">
             <span className="absolute flex h-5 w-5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-peach opacity-75"></span>
@@ -58,7 +58,7 @@ const Portfolio = () => {
             </a>
           </div>
         </Card>
-        <Card dimensions={{ width: 86, height: 72 }} borderStyle={"border-b-2"}>
+        <Card borderStyle={"border-b-2"}>
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-5xl whitespace-nowrap mb-10">
               I&apos;m{" "}
@@ -79,7 +79,7 @@ const Portfolio = () => {
       </div>
       <AvailableCard />
       <BlogCard />
-      <ProjectCard />
+      {/* <ProjectCard /> */}
       <ContactCard />
       <Footer />
     </div>
