@@ -22,7 +22,7 @@ const ContactCard = () => {
 
         <li>
           <a
-            href="https://github.com/uKruel"
+            href="https://github.com/dfxe"
             target="_blank"
             rel="noopener noreferrer"
           >
