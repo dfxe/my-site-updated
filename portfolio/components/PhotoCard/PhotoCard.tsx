@@ -9,11 +9,10 @@ const PhotoCard = ({ borderStyle = "" }) => {
       <Image
         src={comingSoonPhoto}
         alt="A picture placeholder for a picture of me."
-        width={720}
-        height={640}
+        width={1280}
+        height={1024}
         style={{
           border: "10px solid black",
-          borderRadius: "15px",
         }}
         placeholder="blur"
         priority

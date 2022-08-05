@@ -10,6 +10,7 @@ import Navbar from "./Navbar/Navbar";
 import ShowcaseProjectCard from "./ShowcaseProjectCard/ShowcaseProjectCard";
 import AboutCard from "./AboutCard/AboutCard";
 import PhotoCard from "./PhotoCard/PhotoCard";
+import SkillsCard from "./SkillsCard/SkillsCard";
 
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
@@ -52,11 +53,13 @@ const Portfolio = () => {
       </div>
 
       <div className="flex flex-col xl:flex-row">
+        <SkillsCard />
         <BlogCard />
         {/* <ProjectCard /> */}
         <ShowcaseProjectCard />
-        <ContactCard />
       </div>
+
+      <ContactCard />
       <Footer />
     </div>
   );

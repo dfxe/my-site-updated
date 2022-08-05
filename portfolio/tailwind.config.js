@@ -14,6 +14,7 @@ module.exports = {
       background: "#f4f6f6",
       "card-primary": "#f7ebe1",
       "card-secondary": "#f4f6f6",
+      "card-important": "#1a1a1a",
 
       transparent: "transparent",
       pink: "#5be7d1",
@@ -43,5 +44,9 @@ module.exports = {
     },
   },
 
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("children", "& > *");
+    },
+  ],
 };
