@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
 import Card from "../CardPrototypes/Card";
 //@ts-ignore
 import Obfuscate from "react-obfuscate";
 import GithubIcon from "../../public/github.png";
+import Link from "next/link";
 
 const ContactCard = () => {
   return (
@@ -21,13 +21,13 @@ const ContactCard = () => {
         </li>
 
         <li>
-          <a
+          <Link
             href="https://github.com/dfxe"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image src={GithubIcon} alt="Github icon" width={32} height={32} />
-          </a>
+          </Link>
         </li>
       </ul>
     </Card>

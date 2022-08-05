@@ -11,6 +11,7 @@ import ShowcaseProjectCard from "./ShowcaseProjectCard/ShowcaseProjectCard";
 import AboutCard from "./AboutCard/AboutCard";
 import PhotoCard from "./PhotoCard/PhotoCard";
 import SkillsCard from "./SkillsCard/SkillsCard";
+import BackToTop from "./BackToTopButton/BackToTop";
 
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
@@ -44,6 +45,7 @@ const Portfolio = () => {
   }, 1000);
   return (
     <div>
+      <BackToTop />
       <Navbar />
       <div className="flex flex-col lg:flex-row">
         <PhotoCard borderStyle={""} />
