@@ -7,8 +7,11 @@ type Props = {
 const Card = ({ children, borderStyle = "" }: Props) => {
   return (
     <div
-      className={`${borderStyle} p-1 xl:p-10 flex flex-col justify-center items-center
-       hover:drop-shadow-lg hover:scale-[1.05] transition duration-150 ease-in-out `}
+      className={`${borderStyle}
+      flex-auto
+      border-2
+       flex flex-col justify-center items-center
+      hover:drop-shadow-lg transition duration-150 ease-in-out `}
     >
       {children}
     </div>

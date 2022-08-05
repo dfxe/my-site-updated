@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../Card/Card";
+import Card from "../CardPrototypes/Card";
 
 const AvailableCard = () => {
   const monthNames = [
@@ -28,7 +28,7 @@ const AvailableCard = () => {
   });
 
   return (
-    <Card borderStyle="border-b-2 xl:border-l-2 xl:border-r-2 xl:border-b-2">
+    <Card borderStyle="bg-card-primary">
       <div className="flex flex-col justify-center items-center">
         <div className="text-4xl">{availabilityDates.currentMonth}</div>
         <div className="text-6xl">{availabilityDates.currentDay}</div>

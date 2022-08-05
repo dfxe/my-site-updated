@@ -11,12 +11,13 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      background: "#cbccd1",
-      "card-primary": "#f4f6f6",
-      "card-secondary": "#f7ebe1",
+      background: "#f4f6f6",
+      "card-primary": "#f7ebe1",
+      "card-secondary": "#f4f6f6",
+
       transparent: "transparent",
-      pink: "rgb(244 114 182)",
-      red: "rgb(220 38 38)",
+      pink: "#5be7d1",
+      red: "#26dcdc",
       peach: "#d18462",
       redpeach: "#c94c67",
       nextred: "#e95076",

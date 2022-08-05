@@ -1,20 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import Card from "../Card/Card";
+import Card from "../CardPrototypes/Card";
 //@ts-ignore
 import Obfuscate from "react-obfuscate";
 import GithubIcon from "../../public/github.png";
 
 const ContactCard = () => {
   return (
-    <Card borderStyle={""}>
-      <h1 className="text-title whitespace-normal lg:whitespace-nowrap font-extrabold  text-center mb-4">
+    <Card borderStyle={"bg-card-secondary"}>
+      <h1 className="text-title whitespace-normal lg:whitespace-nowrap font-extrabold  text-center ">
         Reach out
       </h1>
       <br></br>
       <ul className="flex flex-col items-center">
         <li
-          className="mb-2 text-xl text-transparent bg-clip-text bg-gradient-to-br
+          className=" text-xl text-transparent bg-clip-text bg-gradient-to-br
            from-pink to-red"
         >
           <Obfuscate email="dfldev@proton.me" />{" "}

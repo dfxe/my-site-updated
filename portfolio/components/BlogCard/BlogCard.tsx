@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "../CardPrototypes/Card";
 import { nanoid } from "nanoid";
 const BlogCard = () => {
   const blogMeta = [
@@ -19,7 +19,7 @@ const BlogCard = () => {
     },
   ];
   return (
-    <Card borderStyle="border-b-2">
+    <Card borderStyle="border-b-2 bg-card-secondary">
       <h1
         className="text-6xl font-extrabold text-center
             mb-20 whitespace-nowrap"
@@ -30,7 +30,7 @@ const BlogCard = () => {
       <ul>
         {blogMeta.map((item, i) => (
           <li key={nanoid()}>
-            <div className="flex justify-between">
+            <div className="flex">
               <span>{i + 1}&nbsp;</span>
               <span>{item.date}</span>
             </div>
@@ -39,7 +39,7 @@ const BlogCard = () => {
                 className="text-2xl bg-clip-text bg-gradient-to-br text-transparent
            from-pink to-red"
               >
-                {item.title}
+                | {item.title}
               </h3>
               <h4 className="text-xl">{item.shortDescription}</h4>
             </a>
