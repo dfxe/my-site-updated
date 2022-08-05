@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Card from "../CardPrototypes/Card";
 
 const AvailableCard = () => {
@@ -16,10 +16,12 @@ const AvailableCard = () => {
     "November",
     "December",
   ];
+  4;
+  //FIX: time zone issue, currentDay not updating at midnight
   const [availabilityDates, setAvailabilityDates] = useState({
     currentDay:
-      new Date().getDate().toString().length === 1
-        ? "0" + new Date().getDate().toString()
+      new Date().getDate().toLocaleString().length === 1
+        ? "0" + new Date().getDate().toLocaleString()
         : new Date().getDate().toLocaleString(),
     currentMonth: monthNames[new Date().getMonth()]
       .substring(0, 3)

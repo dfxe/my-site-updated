@@ -51,6 +51,7 @@ const Portfolio = () => {
         <PhotoCard borderStyle={""} />
         <AboutCard />
 
+        {/**TODO this has an hydration issue */}
         <AvailableCard />
       </div>
 
