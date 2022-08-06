@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../CardPrototypes/Card";
 import Image from "next/image";
 import NumbersPopImage from "../../public/project-images/rmg-1.png";

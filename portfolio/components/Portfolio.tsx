@@ -1,4 +1,3 @@
-import React from "react";
 import AvailableCard from "./AvailableCard/AvailableCard";
 import Card from "./CardPrototypes/Card";
 import ProjectCard from "./ProjectCard/ProjectCard";

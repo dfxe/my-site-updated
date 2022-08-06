@@ -3,10 +3,11 @@ import Card from "../CardPrototypes/Card";
 const SkillsCard = () => {
   return (
     <Card borderStyle={"border-b-2 bg-card-important"}>
-      <h1 className="text-4xl whitespace-normal lg:whitespace-nowrap font-extrabold text-background text-center">
+      <h1 className="text-4xl whitespace-normal lg:whitespace-nowrap font-extrabold text-background text-center mb-4">
         Skills
       </h1>
-      <ul className=" children:text-background children:text-4xl">
+
+      <ul className=" children:text-background children:text-xl list-square">
         <li>React</li>
 
         <li>JavaScript</li>

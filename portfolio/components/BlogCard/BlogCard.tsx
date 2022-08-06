@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../CardPrototypes/Card";
 import { nanoid } from "nanoid";
 const BlogCard = () => {

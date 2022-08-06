@@ -1,4 +1,3 @@
-import React from "react";
 import PatternBayLogo from "../../public/PatternBayLogo";
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";

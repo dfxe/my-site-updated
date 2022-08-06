@@ -6,7 +6,7 @@ const BackToTop = () => {
   useEffect(() => {
     if (typeof window != "undefined")
       window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 300 && window.screen.width < 1024) {
           setShowButton(true);
         } else {
           setShowButton(false);
@@ -23,17 +23,17 @@ const BackToTop = () => {
       });
   };
   return (
-    <div>
+    <>
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="w-24 h-24 absolute float-right z-100 bg-peach"
+          className="w-24 h-24 bottom-24 right-0 fixed z-[1000] bg-peach"
           aria-label="scroll-to-top-button"
         >
-          BTN
+          &#8593;
         </button>
       )}
-    </div>
+    </>
   );
 };
 

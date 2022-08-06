@@ -42,6 +42,14 @@ module.exports = {
         title: "3rem",
       },
     },
+
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+    },
   },
 
   plugins: [
