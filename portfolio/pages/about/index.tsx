@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 const About: NextPage = () => {
   return (
     <>
-      {" "}
+      <title>About me</title>
       <Navbar></Navbar>
       <div className="flex flex-col justify-center items-center">
         <h1>About</h1>

@@ -9,7 +9,7 @@ const SkillsCard = () => {
 
       <ul className=" children:text-background children:text-xl list-square">
         <li>React</li>
-
+        <li>Nextjs</li>
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>Python</li>

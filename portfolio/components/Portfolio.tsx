@@ -57,10 +57,10 @@ const Portfolio = () => {
       </div>
 
       <div className="flex flex-col xl:flex-row">
-        <SkillsCard />
         <BlogCard />
         {/* <ProjectCard /> */}
         <ShowcaseProjectCard />
+        <SkillsCard />
       </div>
 
       <ContactCard />

@@ -2,17 +2,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
 
   useEffect(() => {
     if (typeof window != "undefined")
-      setShowHamburgerMenu(window.screen.width < 1024);
+      setShowBurgerMenu(window.screen.width < 1024);
   }, []);
 
   return (
     <nav>
-      {showHamburgerMenu && (
+      {showBurgerMenu && (
         <>
           <div className="flex row justify-between">
             <div className=" bg-pink w-72 text-6xl">
@@ -43,7 +43,7 @@ const Navbar = () => {
         </>
       )}
 
-      {!showHamburgerMenu && (
+      {!showBurgerMenu && (
         <div className="flex flex-row justify-between items-center text-base mx-4 my-4">
           <div className="flex row bg-pink w-72 text-6xl">
             <Link href="/">@dfxe</Link>

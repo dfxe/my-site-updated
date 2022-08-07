@@ -6,12 +6,15 @@ import Navbar from "../../components/Navbar/Navbar";
 const Blog: NextPage = () => {
   return (
     <>
+      <title>Dragos&apos; blog</title>
       <Navbar></Navbar>
       <div className="flex flex-col justify-center items-center">
         <h1>Blog</h1>
       </div>
 
-      <Link href="/blog/PostOne">PostOne</Link>
+      <div className="flex flex-col justify-center items-center">
+        <Link href="/blog/post-one">Post one</Link>
+      </div>
       <Footer></Footer>
     </>
   );
