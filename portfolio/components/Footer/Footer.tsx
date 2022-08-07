@@ -1,6 +1,15 @@
-const Footer = () => {
+type Props = {
+  isAbsolutePosition?: boolean;
+};
+const Footer = ({ isAbsolutePosition = true }: Props) => {
   return (
-    <div className="flex flex-col justify-center items-center text-base my-4">
+    <footer
+      className={
+        isAbsolutePosition
+          ? "absolute bottom-0 right-0 left-0 flex flex-col justify-center items-center text-center my-10"
+          : "flex flex-col justify-center items-center text-center my-10"
+      }
+    >
       <div className="flex row">
         <div className="text-black">© {new Date().getFullYear()} &nbsp;</div>
         <a
@@ -24,7 +33,7 @@ const Footer = () => {
       >
         Site source code.
       </a>
-    </div>
+    </footer>
   );
 };
 

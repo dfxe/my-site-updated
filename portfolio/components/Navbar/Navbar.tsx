@@ -11,7 +11,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <nav>
       {showHamburgerMenu && (
         <>
           <div className="flex row justify-between">
@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 

@@ -3,8 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
+html {
   background-color: theme("colors.background");
 
   margin: 0;

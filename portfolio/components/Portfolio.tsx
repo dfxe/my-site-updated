@@ -45,7 +45,9 @@ const Portfolio = () => {
   return (
     <div>
       <BackToTop yLimit={300} mobileSizeMax={1024} />
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <div className="flex flex-col lg:flex-row">
         <PhotoCard borderStyle={""} />
         <AboutCard />
@@ -62,7 +64,8 @@ const Portfolio = () => {
       </div>
 
       <ContactCard />
-      <Footer />
+
+      <Footer isAbsolutePosition={false} />
     </div>
   );
 };
