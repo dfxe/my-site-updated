@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ProjectCard/ProjectCard.tsx "],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ProjectCard/ProjectCard.tsx ", "pages/blog/postOne/index.mdx"],
   "exclude": ["node_modules"]
 }
