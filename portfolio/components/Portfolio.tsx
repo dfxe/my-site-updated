@@ -44,7 +44,7 @@ const Portfolio = () => {
   }, 1000);
   return (
     <div>
-      <BackToTop />
+      <BackToTop yLimit={300} mobileSizeMax={1024} />
       <Navbar />
       <div className="flex flex-col lg:flex-row">
         <PhotoCard borderStyle={""} />

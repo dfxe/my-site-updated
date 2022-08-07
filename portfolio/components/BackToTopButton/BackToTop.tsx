@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 
-const BackToTop = () => {
+const BackToTop = ({ yLimit, mobileSizeMax }) => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     if (typeof window != "undefined")
       window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300 && window.screen.width < 1024) {
+        if (
+          window.pageYOffset > yLimit &&
+          window.screen.width < mobileSizeMax
+        ) {
           setShowButton(true);
         } else {
           setShowButton(false);
@@ -27,7 +30,7 @@ const BackToTop = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="w-24 h-24 bottom-24 right-0 fixed z-[1000] bg-peach"
+          className="w-24 h-24 bottom-24 right-0 fixed z-[1000] bg-[#ccc] opacity-50"
           aria-label="scroll-to-top-button"
         >
           &#8593;
