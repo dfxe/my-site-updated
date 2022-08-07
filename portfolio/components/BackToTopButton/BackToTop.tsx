@@ -1,6 +1,10 @@
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 
-const BackToTop = ({ yLimit, mobileSizeMax }) => {
+type Props = {
+  yLimit: number;
+  mobileSizeMax: number;
+};
+const BackToTop = ({ yLimit, mobileSizeMax }: Props): ReactElement => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
