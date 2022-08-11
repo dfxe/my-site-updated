@@ -3,11 +3,15 @@ import { ReactElement } from "react";
 type Props = {
   linkToPage: string;
 };
-const BackToAnotherPageButton = ({ linkToPage }: Props): ReactElement => {
+const BackLinkButton = ({ linkToPage }: Props): ReactElement => {
   return (
-    <button>
-      <Link href={linkToPage}>&#9754;</Link>
-    </button>
+    <Link href={linkToPage}>
+      <button
+        style={{ backgroundColor: "white", width: "12rem", height: "12rem" }}
+      >
+        &#9754;
+      </button>
+    </Link>
   );
 };
-export default BackToAnotherPageButton;
+export default BackLinkButton;
