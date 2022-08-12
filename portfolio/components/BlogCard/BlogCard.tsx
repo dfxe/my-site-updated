@@ -29,7 +29,7 @@ const BlogCard = () => {
       <ul>
         {blogMeta.map((item, i) => (
           <li key={nanoid()}>
-            <div className="flex">
+            <div className="flex justify-between">
               <span>{i + 1}&nbsp;</span>
               <span>{item.date}</span>
             </div>
