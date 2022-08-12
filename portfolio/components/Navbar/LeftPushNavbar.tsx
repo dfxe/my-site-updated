@@ -118,7 +118,8 @@ const LeftPushNavbar = () => {
         >
           <Link href="/">
             <p
-              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              className="cursor-pointer py-10 text-center
+              bg-card-primary text-4xl hover:bg-card-primary-hover transition duration-[200] ease-in-out"
               onClick={() => setShowMobileNavMenu(false)}
             >
               Home
@@ -127,7 +128,7 @@ const LeftPushNavbar = () => {
 
           <Link href="/blog">
             <p
-              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              className="cursor-pointer py-10 text-center bg-card-primary text-4xl hover:bg-card-primary-hover "
               onClick={() => setShowMobileNavMenu(false)}
             >
               Blog
@@ -136,7 +137,7 @@ const LeftPushNavbar = () => {
 
           <Link href="/about">
             <p
-              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              className="cursor-pointer py-10 text-center bg-card-primary text-4xl hover:bg-card-primary-hover "
               onClick={() => setShowMobileNavMenu(false)}
             >
               About

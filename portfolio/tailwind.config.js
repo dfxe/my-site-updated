@@ -13,6 +13,7 @@ module.exports = {
     colors: {
       background: "#f4f6f6",
       "card-primary": "#f7ebe1",
+      "card-primary-hover": "#f7ebbf",
       "card-secondary": "#f4f6f6",
       "card-important": "#1a1a1a",
 
