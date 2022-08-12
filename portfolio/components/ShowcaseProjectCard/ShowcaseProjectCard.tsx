@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useParallax } from "react-scroll-parallax";
 
 const ShowcaseProjectCard = () => {
-  const { ref: parallaxRef } = useParallax({ speed: 30 });
+  const { ref: parallaxRef } = useParallax({ speed: 10 });
   return (
     <NoPaddingCard additionalStyles={"bg-[#f8fafb] -z-[1000]"}>
       <Link

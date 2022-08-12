@@ -1,13 +1,8 @@
-type Props = {
-  isAbsolutePosition?: boolean;
-};
-const Footer = ({ isAbsolutePosition = true }: Props) => {
+const Footer = () => {
   return (
     <footer
       className={
-        isAbsolutePosition
-          ? "absolute bottom-0 right-0 left-0 flex flex-col justify-center items-center text-center my-20"
-          : "flex flex-col justify-center items-center text-center my-10"
+        "flex flex-col justify-center items-center text-center my-10 min-h-[50px]"
       }
     >
       <div className="flex row">

@@ -1,15 +1,14 @@
 import AvailableCard from "./AvailableCard/AvailableCard";
-import ProjectCard from "./ProjectCard/ProjectCard";
 import ContactCard from "./ContactCard/ContactCard";
 import BlogCard from "./BlogCard/BlogCard";
 import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
+
 import ShowcaseProjectCard from "./ShowcaseProjectCard/ShowcaseProjectCard";
 import AboutCard from "./AboutCard/AboutCard";
 import PhotoCard from "./PhotoCard/PhotoCard";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import BackToTop from "./BackToTopButton/BackToTop";
-import { ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { ParallaxProvider } from "react-scroll-parallax";
 import LeftPushNavbar from "./Navbar/LeftPushNavbar";
 
 const Portfolio = () => {
@@ -66,8 +65,7 @@ const Portfolio = () => {
         </div>
 
         <ContactCard />
-
-        <Footer isAbsolutePosition={false} />
+        <Footer></Footer>
       </div>
     </div>
   );

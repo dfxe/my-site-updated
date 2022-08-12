@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import anime from "animejs";
 
 const LeftPushNavbar = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
-  const firstUpdate = useRef(false);
+
   useEffect(() => {
     if (typeof window != "undefined") {
       if (showMobileNavMenu) {
@@ -14,7 +14,7 @@ const LeftPushNavbar = () => {
             targets: "body",
             translateX: [0, -window.screen.width],
             translateY: [0, 0],
-            duration: 600,
+            duration: 500,
             easing: "easeInOutQuad",
           });
           anime({
@@ -22,15 +22,54 @@ const LeftPushNavbar = () => {
             //from-to
             width: "120%",
 
-            duration: 600,
+            duration: 500,
+            easing: "easeInOutQuad",
+          });
+          anime({
+            targets: "#the-nav-children-els",
+            //from-to
+            left: "100%",
+            width: "100%",
+            duration: 500,
             easing: "easeInOutQuad",
           });
         } else {
           anime({
             targets: "body",
-            translateX: [0, -500],
+            translateX: [0, "-33vw"],
             translateY: [0, 0],
-            duration: 600,
+            duration: 500,
+            easing: "easeInOutQuad",
+          });
+        }
+        //moving the nav children
+      } else {
+        // idle
+
+        if (window.screen.width < 1280) {
+          anime({
+            targets: "body",
+            //from-to
+            translateX: [-window.screen.width, 0],
+            translateY: [0, 0],
+            duration: 500,
+            easing: "easeInOutQuad",
+          });
+          anime({
+            targets: "nav",
+            //from-to
+            width: "100%",
+
+            duration: 500,
+            easing: "easeInOutQuad",
+          });
+        } else {
+          anime({
+            targets: "body",
+            //from-to
+            translateX: ["-33vw", 0],
+            translateY: [0, 0],
+            duration: 500,
             easing: "easeInOutQuad",
           });
         }
@@ -39,67 +78,10 @@ const LeftPushNavbar = () => {
           targets: "#the-nav-children-els",
           //from-to
           left: "100%",
-          duration: 600,
+          width: "33vw",
+          duration: 500,
           easing: "easeInOutQuad",
         });
-        anime({
-          targets: "#the-nav-children-els",
-          //from-to
-          delay: 600,
-          display: "flex",
-          duration: 600,
-          easing: "easeInOutQuad",
-        });
-      } else {
-        // idle
-        if (!firstUpdate.current) {
-          firstUpdate.current = true;
-        } else {
-          if (window.screen.width < 1280) {
-            anime({
-              targets: "body",
-              //from-to
-              translateX: [-window.screen.width, 0],
-              translateY: [0, 0],
-              duration: 600,
-              easing: "easeInOutQuad",
-            });
-            anime({
-              targets: "nav",
-              //from-to
-              width: "100%",
-
-              duration: 600,
-              easing: "easeInOutQuad",
-            });
-          } else {
-            anime({
-              targets: "body",
-              //from-to
-              translateX: [-500, 0],
-              translateY: [0, 0],
-              duration: 600,
-              easing: "easeInOutQuad",
-            });
-          }
-          //moving the nav children
-          anime({
-            targets: "#the-nav-children-els",
-            //from-to
-
-            left: "100%",
-            duration: 600,
-            easing: "easeInOutQuad",
-          });
-          anime({
-            targets: "#the-nav-children-els",
-            //from-to
-            delay: 400,
-            display: "none",
-            duration: 600,
-            easing: "easeInOutQuad",
-          });
-        }
       }
     }
   }, [showMobileNavMenu]);
@@ -126,24 +108,39 @@ const LeftPushNavbar = () => {
 
         <div
           id="the-nav-children-els"
-          className="
-            fixed
-            -z-10
-            w-full
-            flex flex-col children:px-10 children:py-2 children:border-b-1
-             children:bg-card-primary
-            children:text-4xl"
+          style={{
+            display: showMobileNavMenu ? "flex" : "none",
+            flexDirection: "column",
+            zIndex: -10,
+            width: "auto",
+            position: "fixed",
+          }}
         >
           <Link href="/">
-            <p onClick={() => setShowMobileNavMenu(false)}>Home</p>
+            <p
+              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              onClick={() => setShowMobileNavMenu(false)}
+            >
+              Home
+            </p>
           </Link>
 
           <Link href="/blog">
-            <p onClick={() => setShowMobileNavMenu(false)}>Blog</p>
+            <p
+              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              onClick={() => setShowMobileNavMenu(false)}
+            >
+              Blog
+            </p>
           </Link>
 
           <Link href="/about">
-            <p onClick={() => setShowMobileNavMenu(false)}>About</p>
+            <p
+              className="cursor-pointer py-10 text-center bg-card-primary text-4xl"
+              onClick={() => setShowMobileNavMenu(false)}
+            >
+              About
+            </p>
           </Link>
         </div>
       </nav>
