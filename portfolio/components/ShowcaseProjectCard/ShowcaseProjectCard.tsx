@@ -13,6 +13,7 @@ const ShowcaseProjectCard = () => {
         target={"_blank"}
         rel="noopener noreferrer"
       >
+        {/*@ts-ignore*/}
         <div ref={parallaxRef}>
           <Image
             src={patternbayImage}

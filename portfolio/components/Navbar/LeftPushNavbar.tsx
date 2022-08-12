@@ -38,7 +38,15 @@ const LeftPushNavbar = () => {
         anime({
           targets: "#the-nav-children-els",
           //from-to
-          left: "105%",
+          left: "100%",
+          duration: 600,
+          easing: "easeInOutQuad",
+        });
+        anime({
+          targets: "#the-nav-children-els",
+          //from-to
+          delay: 600,
+          display: "flex",
           duration: 600,
           easing: "easeInOutQuad",
         });
@@ -80,6 +88,14 @@ const LeftPushNavbar = () => {
           duration: 600,
           easing: "easeInOutQuad",
         });
+        anime({
+          targets: "#the-nav-children-els",
+          //from-to
+          delay: 300,
+          display: "none",
+          duration: 600,
+          easing: "easeInOutQuad",
+        });
       }
     }
   }, [showMobileNavMenu]);
@@ -107,11 +123,12 @@ const LeftPushNavbar = () => {
         <div
           id="the-nav-children-els"
           className="
-
             fixed
+            -z-10
             w-full
             flex flex-col children:px-10 children:py-2 children:border-b-1
-            children:border-t-2 children:bg-card-primary"
+             children:bg-card-primary
+            children:text-4xl"
         >
           <Link href="/">Home</Link>
 
