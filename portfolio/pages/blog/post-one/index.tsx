@@ -1,19 +1,26 @@
 import { useEffect } from "react";
 import BackLinkButton from "../../../components/BackLinkButton/BackLinkButton";
-
+import anime from "animejs";
 const PostOne = () => {
   useEffect(() => {
-    if (typeof window != "undefined")
+    if (typeof window != "undefined") {
       document.documentElement.style.left = "0px";
+    }
+    anime({
+      targets: "body",
+      translateX: [0, 0],
+      translateY: [100, 0],
+
+      duration: 500,
+      easing: "easeInOutQuad",
+    });
   }, []);
 
   return (
     <>
       <BackLinkButton linkToPage={"/blog"} />
-
       <div className="flex flex-col mx-4 xl:mx-96">
         <h1 className="text-4xl xl:text-8xl my-5">Rows & Columns</h1>
-
         <div
           style={{
             display: "flex",
