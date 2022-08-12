@@ -12,8 +12,8 @@ const PostOne = () => {
       <BackLinkButton linkToPage={"/blog"} />
 
       <div className="flex flex-col mx-4 xl:mx-96">
-        <h1 className="text-4xl xl:text-8xl">Rows & Columns</h1>
-        <br></br>
+        <h1 className="text-4xl xl:text-8xl my-5">Rows & Columns</h1>
+
         <div
           style={{
             display: "flex",

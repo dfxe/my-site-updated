@@ -89,11 +89,14 @@ const LeftPushNavbar = () => {
   return (
     <header>
       <nav>
-        <div className="flex row justify-between mx-4">
+        <div className="flex row justify-between">
           <div className=" bg-card-primary w-72 text-6xl">
             <Link href="/">@dfxe</Link>
           </div>
-          <button onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}>
+          <button
+            className="mr-4"
+            onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
+          >
             <svg
               data-name="Layer 3"
               xmlns="http://www.w3.org/2000/svg"
