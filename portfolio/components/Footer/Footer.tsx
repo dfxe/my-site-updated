@@ -6,7 +6,7 @@ const Footer = ({ isAbsolutePosition = true }: Props) => {
     <footer
       className={
         isAbsolutePosition
-          ? "absolute bottom-0 right-0 left-0 flex flex-col justify-center items-center text-center my-10"
+          ? "absolute bottom-0 right-0 left-0 flex flex-col justify-center items-center text-center my-20"
           : "flex flex-col justify-center items-center text-center my-10"
       }
     >

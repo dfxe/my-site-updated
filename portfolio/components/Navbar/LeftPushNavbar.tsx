@@ -11,7 +11,7 @@ const LeftPushNavbar = () => {
         // push left
         if (window.screen.width < 1280) {
           anime({
-            targets: "#the-rest-of-the-page",
+            targets: "body",
             translateX: [0, -window.screen.width],
             translateY: [0, 0],
             duration: 600,
@@ -27,7 +27,7 @@ const LeftPushNavbar = () => {
           });
         } else {
           anime({
-            targets: "#the-rest-of-the-page",
+            targets: "body",
             translateX: [0, -500],
             translateY: [0, 0],
             duration: 600,
@@ -57,7 +57,7 @@ const LeftPushNavbar = () => {
         } else {
           if (window.screen.width < 1280) {
             anime({
-              targets: "#the-rest-of-the-page",
+              targets: "body",
               //from-to
               translateX: [-window.screen.width, 0],
               translateY: [0, 0],
@@ -74,7 +74,7 @@ const LeftPushNavbar = () => {
             });
           } else {
             anime({
-              targets: "#the-rest-of-the-page",
+              targets: "body",
               //from-to
               translateX: [-500, 0],
               translateY: [0, 0],
@@ -134,16 +134,16 @@ const LeftPushNavbar = () => {
              children:bg-card-primary
             children:text-4xl"
         >
-          <Link href="/" onClick={() => setShowMobileNavMenu(false)}>
-            Home
+          <Link href="/">
+            <p onClick={() => setShowMobileNavMenu(false)}>Home</p>
           </Link>
 
-          <Link href="/blog" onClick={() => setShowMobileNavMenu(false)}>
-            Blog
+          <Link href="/blog">
+            <p onClick={() => setShowMobileNavMenu(false)}>Blog</p>
           </Link>
 
-          <Link href="/about" onClick={() => setShowMobileNavMenu(false)}>
-            About
+          <Link href="/about">
+            <p onClick={() => setShowMobileNavMenu(false)}>About</p>
           </Link>
         </div>
       </nav>
