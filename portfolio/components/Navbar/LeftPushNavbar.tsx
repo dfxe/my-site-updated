@@ -90,7 +90,7 @@ const LeftPushNavbar = () => {
     <header>
       <nav>
         <div className="flex row justify-between">
-          <div className=" bg-card-primary w-72 text-6xl">
+          <div className="bg-card-primary w-9/12 text-6xl">
             <Link href="/">@dfxe</Link>
           </div>
           <button

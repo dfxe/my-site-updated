@@ -9,7 +9,7 @@ const PostOne = () => {
     anime({
       targets: "body",
       translateX: [0, 0],
-      translateY: [100, 0],
+      translateY: [0, 0],
 
       duration: 500,
       easing: "easeInOutQuad",
@@ -21,12 +21,7 @@ const PostOne = () => {
       <BackLinkButton linkToPage={"/blog"} />
       <div className="flex flex-col mx-4 xl:mx-96">
         <h1 className="text-4xl xl:text-8xl my-5">Rows & Columns</h1>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
+        <div className="flex justify-between mb-4">
           <p style={{ flex: "50%", textAlign: "justify" }}>
             They had always called it the green river. It made sense. The river
             was green. The river likely had a different official name, but to
@@ -42,8 +37,7 @@ const PostOne = () => {
             that listens like that, words take on a whole new meaning.
           </p>
         </div>
-        <br></br>
-        <br></br>
+
         <div
           style={{
             display: "flex",
