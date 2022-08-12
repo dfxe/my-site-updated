@@ -10,6 +10,7 @@ import PhotoCard from "./PhotoCard/PhotoCard";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import BackToTop from "./BackToTopButton/BackToTop";
 import { ParallaxProvider, useParallax } from "react-scroll-parallax";
+import LeftPushNavbar from "./Navbar/LeftPushNavbar";
 
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
@@ -18,17 +19,17 @@ const Portfolio = () => {
         if (e.key === "F12") {
           // prettier-ignore
           console.log(
-            '%cHi there!%cThis site is made and maintained by @ukruel',
+            '%cHi there!%cThis site is made and maintained by @dfxe',
             `
             background-color: #f7ebe1;
-            color: #eb5985;
+            color: black;
             font-size: 12px;
             border-radius: 10px 10px 0 0;
             padding: 1em 1em 1em 1em;
             `,
             `
             background-color: #f7ebe1;
-            color: #eb5985;
+            color: black;
             font-size: 12px;
             border-radius: 0 10px 10px 10px;
             padding: 1em 1em 1em 1em;
@@ -44,29 +45,30 @@ const Portfolio = () => {
   return (
     <div>
       <BackToTop yLimit={300} mobileSizeMax={1024} />
-      <header>
-        <Navbar />
-      </header>
-      <div className="flex flex-col lg:flex-row">
-        <PhotoCard borderStyle={""} />
-        <AboutCard />
+      <div id="the-rest-of-the-page">
+        <LeftPushNavbar />
 
-        {/**TODO this has an hydration issue */}
-        <AvailableCard />
+        <div className="flex flex-col lg:flex-row">
+          <PhotoCard />
+          <AboutCard />
+
+          {/**TODO this has an time zone issue */}
+          <AvailableCard />
+        </div>
+
+        <div className="flex flex-col xl:flex-row">
+          <BlogCard />
+          {/* <ProjectCard /> */}
+          <ParallaxProvider>
+            <ShowcaseProjectCard />
+          </ParallaxProvider>
+          <SkillsCard />
+        </div>
+
+        <ContactCard />
+
+        <Footer isAbsolutePosition={false} />
       </div>
-
-      <div className="flex flex-col xl:flex-row">
-        <BlogCard />
-        {/* <ProjectCard /> */}
-        <ParallaxProvider>
-          <ShowcaseProjectCard />
-        </ParallaxProvider>
-        <SkillsCard />
-      </div>
-
-      <ContactCard />
-
-      <Footer isAbsolutePosition={false} />
     </div>
   );
 };

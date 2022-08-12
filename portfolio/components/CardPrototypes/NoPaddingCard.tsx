@@ -1,11 +1,12 @@
 type Props = {
   children: React.ReactNode;
-  borderStyle?: string;
+  additionalStyles?: string;
 };
-const Card = ({ children, borderStyle = "" }: Props) => {
+const Card = ({ children, additionalStyles = "" }: Props) => {
   return (
     <div
-      className={`${borderStyle}
+      className={`
+      ${additionalStyles}
       border-r-0 border-l-0 border-t-2 border-b-2
       xl:border-r-2 xl:border-l-2 xl:border-b-2 xl:border-t-2
       hover:drop-shadow-lg transition duration-150 ease-in-out`}

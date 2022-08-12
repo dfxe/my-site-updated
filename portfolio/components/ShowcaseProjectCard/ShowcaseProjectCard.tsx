@@ -7,7 +7,7 @@ import { useParallax } from "react-scroll-parallax";
 const ShowcaseProjectCard = () => {
   const { ref: parallaxRef } = useParallax({ speed: 10 });
   return (
-    <NoPaddingCard borderStyle={"bg-card-secondary"}>
+    <NoPaddingCard additionalStyles={"bg-card-secondary"}>
       <Link
         href="https://patternbay.vercel.app/"
         target={"_blank"}
@@ -23,6 +23,7 @@ const ShowcaseProjectCard = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
+              zIndex: -1,
             }}
             placeholder="blur"
             priority
