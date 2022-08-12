@@ -1,6 +1,6 @@
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
-import comingSoonPhoto from "./../../public/h2.png";
+import comingSoonPhoto from "./../../public/h3.png";
 
 const PhotoCard = ({ borderStyle = "" }) => {
   return (

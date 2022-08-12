@@ -17,8 +17,8 @@ module.exports = {
       "card-important": "#1a1a1a",
 
       transparent: "transparent",
-      pink: "#5be7d1",
-      red: "#26dcdc",
+      pink: "#d18462",
+      red: "#c94c67",
       peach: "#d18462",
       redpeach: "#c94c67",
       nextred: "#e95076",

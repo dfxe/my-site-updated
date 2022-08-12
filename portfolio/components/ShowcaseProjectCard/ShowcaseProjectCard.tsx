@@ -1,9 +1,11 @@
-import PatternBayLogo from "../../public/PatternBayLogo";
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
 import patternbayImage from "../../public/patternbay.png";
 import Link from "next/link";
+import { useParallax } from "react-scroll-parallax";
+
 const ShowcaseProjectCard = () => {
+  const { ref: parallaxRef } = useParallax({ speed: 10 });
   return (
     <NoPaddingCard borderStyle={"bg-card-secondary"}>
       <Link
@@ -11,20 +13,22 @@ const ShowcaseProjectCard = () => {
         target={"_blank"}
         rel="noopener noreferrer"
       >
-        <Image
-          src={patternbayImage}
-          alt="The showcase project, patternbay."
-          width={1280}
-          height={800}
-          style={{
-            border: "10px solid black",
-            cursor: "pointer",
-          }}
-          placeholder="blur"
-          priority
-          quality={"95"}
-          objectFit={"fill"}
-        ></Image>
+        <div ref={parallaxRef}>
+          <Image
+            src={patternbayImage}
+            alt="The showcase project, patternbay."
+            style={{
+              cursor: "pointer",
+              backgroundAttachment: "fixed",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+            placeholder="blur"
+            priority
+            quality={"95"}
+          />
+        </div>
       </Link>
     </NoPaddingCard>
   );
