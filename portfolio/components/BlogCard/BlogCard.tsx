@@ -5,15 +5,15 @@ const BlogCard = () => {
     {
       id: nanoid(),
       date: "22.06.22",
-      path: "blog/p1",
-      title: "Post One Coming",
+      path: "blog/post-one",
+      title: "Labrador",
       shortDescription: "Homebuilding part two",
     },
     {
       id: nanoid(),
       date: "22.06.22",
-      path: "blog/p2",
-      title: "Post One Coming",
+      path: "blog/post-two",
+      title: "Labrador",
       shortDescription: "Distro avs?",
     },
   ];

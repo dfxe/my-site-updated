@@ -20,7 +20,7 @@ const ContactCard = () => {
           <Obfuscate email="dfldev@proton.me" />{" "}
         </li>
 
-        <li>
+        <li className="cursor-pointer">
           <Link
             href="https://github.com/dfxe"
             target="_blank"
