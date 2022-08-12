@@ -36,6 +36,7 @@ const PostOne = () => {
           </p>
         </div>
         <br></br>
+        <br></br>
         <div
           style={{
             display: "flex",

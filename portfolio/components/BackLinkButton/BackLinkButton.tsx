@@ -7,9 +7,23 @@ const BackLinkButton = ({ linkToPage }: Props): ReactElement => {
   return (
     <Link href={linkToPage}>
       <button
-        style={{ backgroundColor: "white", width: "10rem", height: "10rem" }}
+        style={{
+          backgroundColor: "white",
+          width: "6rem",
+          height: "6rem",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
-        &#9754;
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          viewBox="0 0 32 32"
+        >
+          <path d="M10.018 18v-5h10V5h-10V0L0 8.939 10.018 18z" />
+        </svg>
       </button>
     </Link>
   );
