@@ -19,7 +19,7 @@ const Blog: NextPage = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex row justify-around text-xl">
           <span>1</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="text-xl">22.06.22</span>
         </div>
         <p className="text-4xl">

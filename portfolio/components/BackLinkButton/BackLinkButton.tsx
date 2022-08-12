@@ -7,7 +7,7 @@ const BackLinkButton = ({ linkToPage }: Props): ReactElement => {
   return (
     <Link href={linkToPage}>
       <button
-        style={{ backgroundColor: "white", width: "12rem", height: "12rem" }}
+        style={{ backgroundColor: "white", width: "10rem", height: "10rem" }}
       >
         &#9754;
       </button>

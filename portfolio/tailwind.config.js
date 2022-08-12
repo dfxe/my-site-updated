@@ -16,7 +16,6 @@ module.exports = {
       "card-primary-hover": "#f7ebbf",
       "card-secondary": "#f4f6f6",
       "card-important": "#1a1a1a",
-
       transparent: "transparent",
       pink: "#d18462",
       red: "#c94c67",
