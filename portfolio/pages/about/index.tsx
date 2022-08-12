@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
+import LeftPushNavbar from "../../components/Navbar/LeftPushNavbar";
 
 const About: NextPage = () => {
   return (
     <>
       <title>About me</title>
-      <Navbar></Navbar>
+      <LeftPushNavbar></LeftPushNavbar>
       <div className="flex flex-col justify-center items-center">
         <h1>About</h1>
       </div>

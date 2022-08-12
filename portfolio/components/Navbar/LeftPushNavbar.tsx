@@ -38,7 +38,7 @@ const LeftPushNavbar = () => {
         anime({
           targets: "#the-nav-children-els",
           //from-to
-          left: "120%",
+          left: "105%",
           duration: 600,
           easing: "easeInOutQuad",
         });
@@ -76,6 +76,7 @@ const LeftPushNavbar = () => {
           targets: "#the-nav-children-els",
           //from-to
 
+          left: "100%",
           duration: 600,
           easing: "easeInOutQuad",
         });
@@ -86,7 +87,7 @@ const LeftPushNavbar = () => {
   return (
     <header>
       <nav>
-        <div className="flex row justify-between">
+        <div className="flex row justify-between mx-4">
           <div className=" bg-pink w-72 text-6xl">
             <Link href="/">@dfxe</Link>
           </div>
@@ -103,21 +104,21 @@ const LeftPushNavbar = () => {
           </button>
         </div>
 
-        {showMobileNavMenu && (
-          <div
-            id="the-nav-children-els"
-            className="
+        <div
+          id="the-nav-children-els"
+          className="
+
             fixed
+            w-full
             flex flex-col children:px-10 children:py-2 children:border-b-1
             children:border-t-2 children:bg-card-primary"
-          >
-            <Link href="/">Home</Link>
+        >
+          <Link href="/">Home</Link>
 
-            <Link href="/blog">Blog</Link>
+          <Link href="/blog">Blog</Link>
 
-            <Link href="/about">About</Link>
-          </div>
-        )}
+          <Link href="/about">About</Link>
+        </div>
       </nav>
     </header>
   );

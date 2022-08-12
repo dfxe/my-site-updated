@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
+import LeftPushNavbar from "../../components/Navbar/LeftPushNavbar";
 
 const Blog: NextPage = () => {
   return (
     <>
       <title>Dragos&apos; blog</title>
-      <Navbar></Navbar>
+      <LeftPushNavbar></LeftPushNavbar>
       <div className="flex flex-col justify-center items-center">
         <h1>Blog</h1>
       </div>
