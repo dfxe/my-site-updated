@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import anime from "animejs";
 
 const LeftPushNavbar = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
-
+  const firstUpdate = useRef(false);
   useEffect(() => {
     if (typeof window != "undefined") {
       if (showMobileNavMenu) {
@@ -52,50 +52,54 @@ const LeftPushNavbar = () => {
         });
       } else {
         // idle
-        if (window.screen.width < 1280) {
-          anime({
-            targets: "#the-rest-of-the-page",
-            //from-to
-            translateX: [-window.screen.width, 0],
-            translateY: [0, 0],
-            duration: 600,
-            easing: "easeInOutQuad",
-          });
-          anime({
-            targets: "nav",
-            //from-to
-            width: "100%",
-
-            duration: 600,
-            easing: "easeInOutQuad",
-          });
+        if (!firstUpdate.current) {
+          firstUpdate.current = true;
         } else {
+          if (window.screen.width < 1280) {
+            anime({
+              targets: "#the-rest-of-the-page",
+              //from-to
+              translateX: [-window.screen.width, 0],
+              translateY: [0, 0],
+              duration: 600,
+              easing: "easeInOutQuad",
+            });
+            anime({
+              targets: "nav",
+              //from-to
+              width: "100%",
+
+              duration: 600,
+              easing: "easeInOutQuad",
+            });
+          } else {
+            anime({
+              targets: "#the-rest-of-the-page",
+              //from-to
+              translateX: [-500, 0],
+              translateY: [0, 0],
+              duration: 600,
+              easing: "easeInOutQuad",
+            });
+          }
+          //moving the nav children
           anime({
-            targets: "#the-rest-of-the-page",
+            targets: "#the-nav-children-els",
             //from-to
-            translateX: [-500, 0],
-            translateY: [0, 0],
+
+            left: "100%",
+            duration: 600,
+            easing: "easeInOutQuad",
+          });
+          anime({
+            targets: "#the-nav-children-els",
+            //from-to
+            delay: 400,
+            display: "none",
             duration: 600,
             easing: "easeInOutQuad",
           });
         }
-        //moving the nav children
-        anime({
-          targets: "#the-nav-children-els",
-          //from-to
-
-          left: "100%",
-          duration: 600,
-          easing: "easeInOutQuad",
-        });
-        anime({
-          targets: "#the-nav-children-els",
-          //from-to
-          delay: 300,
-          display: "none",
-          duration: 600,
-          easing: "easeInOutQuad",
-        });
       }
     }
   }, [showMobileNavMenu]);
@@ -104,7 +108,7 @@ const LeftPushNavbar = () => {
     <header>
       <nav>
         <div className="flex row justify-between mx-4">
-          <div className=" bg-pink w-72 text-6xl">
+          <div className=" bg-card-primary w-72 text-6xl">
             <Link href="/">@dfxe</Link>
           </div>
           <button onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}>
@@ -130,11 +134,17 @@ const LeftPushNavbar = () => {
              children:bg-card-primary
             children:text-4xl"
         >
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={() => setShowMobileNavMenu(false)}>
+            Home
+          </Link>
 
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog" onClick={() => setShowMobileNavMenu(false)}>
+            Blog
+          </Link>
 
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={() => setShowMobileNavMenu(false)}>
+            About
+          </Link>
         </div>
       </nav>
     </header>

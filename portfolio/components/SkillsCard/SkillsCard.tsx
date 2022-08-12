@@ -2,7 +2,7 @@ import Card from "../CardPrototypes/Card";
 
 const SkillsCard = () => {
   return (
-    <Card borderStyle={"border-b-2 bg-card-important"}>
+    <Card additionalStyles={"border-b-2 bg-card-important"}>
       <h1 className="text-4xl whitespace-normal lg:whitespace-nowrap font-extrabold text-background text-center mb-4">
         Skills
       </h1>

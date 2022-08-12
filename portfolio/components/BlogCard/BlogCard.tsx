@@ -18,7 +18,7 @@ const BlogCard = () => {
     },
   ];
   return (
-    <Card borderStyle="border-b-2 bg-card-secondary">
+    <Card additionalStyles="border-b-2 bg-card-secondary">
       <h1
         className="text-6xl font-extrabold text-center
             mb-20 whitespace-nowrap"

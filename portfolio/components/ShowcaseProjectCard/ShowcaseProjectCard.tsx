@@ -5,14 +5,15 @@ import Link from "next/link";
 import { useParallax } from "react-scroll-parallax";
 
 const ShowcaseProjectCard = () => {
-  const { ref: parallaxRef } = useParallax({ speed: 10 });
+  const { ref: parallaxRef } = useParallax({ speed: 30 });
   return (
-    <NoPaddingCard additionalStyles={"bg-card-secondary"}>
+    <NoPaddingCard additionalStyles={"bg-[#f8fafb] -z-[1000]"}>
       <Link
         href="https://patternbay.vercel.app/"
         target={"_blank"}
         rel="noopener noreferrer"
       >
+        {/** TODO check this ignore Ref issue */}
         {/*@ts-ignore*/}
         <div ref={parallaxRef}>
           <Image
@@ -20,11 +21,6 @@ const ShowcaseProjectCard = () => {
             alt="The showcase project, patternbay."
             style={{
               cursor: "pointer",
-              backgroundAttachment: "fixed",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              zIndex: -1,
             }}
             placeholder="blur"
             priority

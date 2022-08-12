@@ -2,7 +2,7 @@ import Card from "../CardPrototypes/Card";
 
 const AboutCard = () => {
   return (
-    <Card borderStyle={"border-b-2 bg-card-secondary"}>
+    <Card additionalStyles={"border-b-2 bg-card-secondary"}>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-5xl whitespace-nowrap mb-10">
           Hi, I&apos;m{" "}

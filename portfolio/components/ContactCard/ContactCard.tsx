@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ContactCard = () => {
   return (
-    <Card borderStyle={"bg-card-secondary"}>
+    <Card additionalStyles={"bg-card-secondary"}>
       <h1 className="text-title whitespace-normal lg:whitespace-nowrap font-extrabold  text-center ">
         Reach out
       </h1>
