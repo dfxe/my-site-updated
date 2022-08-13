@@ -3,7 +3,7 @@ module.exports = withMDX({
   reactStrictMode: true,
   pageExtensions: ["tsx", "mdx"],
   i18n: {
-    locales: ["en-gb"],
-    defaultLocale: "en-gb",
+    locales: ["en-gb","en"],
+    defaultLocale: "en",
   },
 });

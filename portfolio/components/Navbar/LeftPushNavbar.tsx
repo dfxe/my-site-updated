@@ -92,8 +92,8 @@ const LeftPushNavbar = () => {
     <header>
       <nav className="border-2">
         <div className="flex row justify-between">
-          <div className="bg-card-primary w-64 text-6xl border-2">
-            <Link href="/">@dfxe</Link>
+          <div className="bg-card-primary w-64 text-6xl border-2 pl-2">
+            <Link href="/">d9u</Link>
           </div>
           <button
             aria-label="Navigation"
