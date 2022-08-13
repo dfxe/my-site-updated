@@ -88,9 +88,9 @@ const LeftPushNavbar = () => {
 
   return (
     <header>
-      <nav>
+      <nav className="border-2">
         <div className="flex row justify-between">
-          <div className="bg-card-primary w-9/12 text-6xl">
+          <div className="bg-card-primary w-64 text-6xl border-2">
             <Link href="/">@dfxe</Link>
           </div>
           <button
@@ -118,6 +118,7 @@ const LeftPushNavbar = () => {
             width: "auto",
             position: "fixed",
           }}
+          className="children:border-2"
         >
           <Link href="/">
             <p

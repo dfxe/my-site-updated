@@ -4,7 +4,8 @@ import comingSoonPhoto from "./../../public/h3.png";
 
 const PhotoCard = () => {
   return (
-    <NoPaddingCard additionalStyles="bg-[black]">
+    //TODO fix blank space background issue
+    <NoPaddingCard additionalStyles="">
       <Image
         src={comingSoonPhoto}
         alt="A picture placeholder for a picture of me."
