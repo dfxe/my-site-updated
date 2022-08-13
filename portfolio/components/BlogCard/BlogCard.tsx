@@ -34,12 +34,12 @@ const BlogCard = () => {
               <span>{item.date}</span>
             </div>
             <a href={item.path}>
-              <h3
+              <p
                 className="text-2xl bg-clip-text bg-gradient-to-br text-transparent
            from-pink to-red"
               >
                 | {item.title}
-              </h3>
+              </p>
               <h4 className="text-xl">{item.shortDescription}</h4>
             </a>
             <br />
