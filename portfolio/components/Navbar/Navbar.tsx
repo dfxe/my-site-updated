@@ -20,6 +20,7 @@ const Navbar = () => {
                 <Link href="/">@dfxe</Link>
               </div>
               <button
+                aria-label="Navigation"
                 role="button"
                 onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
               >
