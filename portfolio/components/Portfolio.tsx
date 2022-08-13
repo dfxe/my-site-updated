@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 
 import ShowcaseProjectCard from "./ShowcaseProjectCard/ShowcaseProjectCard";
 import AboutCard from "./AboutCard/AboutCard";
-import PhotoCard from "./PhotoCard/PhotoCard";
+import HeroImage from "./HeroImage/HeroImage";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import BackToTop from "./BackToTopButton/BackToTop";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -48,7 +48,7 @@ const Portfolio = () => {
         <LeftPushNavbar />
 
         <div className="flex flex-col lg:flex-row">
-          <PhotoCard />
+          <HeroImage />
           <AboutCard />
 
           {/**TODO this has an time zone issue */}

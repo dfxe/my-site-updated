@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import anime from "animejs";
+import { usePageContext } from "../Contexts/PageViewProvider";
 
 const LeftPushNavbar = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
+  const isOnHeroPage = usePageContext();
 
   useEffect(() => {
     if (typeof window != "undefined") {
@@ -120,33 +122,50 @@ const LeftPushNavbar = () => {
           }}
           className="children:border-2"
         >
-          <Link href="/">
+          <Link href="/" onClickCapture={() => isOnHeroPage.setter(true)}>
             <p
-              className="cursor-pointer py-10 text-center
-              bg-card-primary text-4xl hover:bg-card-primary-hover transition duration-[200] ease-in-out"
-              onClick={() => setShowMobileNavMenu(false)}
+              className={`
+              cursor-pointer py-10 text-center ${
+                isOnHeroPage.getter
+                  ? "bg-card-primary-hover"
+                  : "bg-card-primary"
+              } text-4xl hover:bg-card-primary-hover
+              `}
+              onClick={() => {
+                setShowMobileNavMenu(false);
+              }}
             >
               Home
             </p>
           </Link>
 
-          <Link href="/blog">
+          <Link href="/blog" onClickCapture={() => isOnHeroPage.setter(false)}>
             <p
-              className="cursor-pointer py-10 text-center bg-card-primary text-4xl hover:bg-card-primary-hover "
-              onClick={() => setShowMobileNavMenu(false)}
+              className={`
+            cursor-pointer py-10 text-center ${
+              isOnHeroPage.getter ? "bg-card-primary" : "bg-card-primary-hover"
+            } text-4xl hover:bg-card-primary-hover
+            `}
+              onClick={() => {
+                setShowMobileNavMenu(false);
+              }}
             >
               Blog
             </p>
           </Link>
 
-          <Link href="/about">
+          {/* <Link href="/about">
             <p
-              className="cursor-pointer py-10 text-center bg-card-primary text-4xl hover:bg-card-primary-hover "
+              className={`
+              cursor-pointer py-10 text-center ${
+                isOnHeroPage ? "bg-card-primary-hover" : "bg-card-primary"
+              } text-4xl hover:bg-card-primary-hover
+              `}
               onClick={() => setShowMobileNavMenu(false)}
             >
               About
             </p>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>

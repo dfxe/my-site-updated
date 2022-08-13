@@ -2,7 +2,7 @@ import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
 import comingSoonPhoto from "./../../public/h3.png";
 
-const PhotoCard = () => {
+const HeroImage = () => {
   return (
     //TODO fix blank space background issue
     <NoPaddingCard additionalStyles="">
@@ -19,4 +19,4 @@ const PhotoCard = () => {
   );
 };
 
-export default PhotoCard;
+export default HeroImage;
