@@ -1,6 +1,6 @@
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
-import comingSoonPhoto from "./../../public/h33.png";
+import comingSoonPhoto from "./../../public/h3w.webp";
 
 const HeroImage = () => {
   return (
