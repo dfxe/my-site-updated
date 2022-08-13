@@ -33,6 +33,7 @@ const BackToTop = ({ yLimit, mobileSizeMax }: Props): ReactElement => {
     <>
       {showButton && (
         <button
+          role="button"
           onClick={scrollToTop}
           className="fixed w-24 h-24 bottom-24 right-0 z-[1001] bg-[#ccc] opacity-70"
           aria-label="scroll-to-top-button"

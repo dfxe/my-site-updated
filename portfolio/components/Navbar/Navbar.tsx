@@ -19,7 +19,10 @@ const Navbar = () => {
               <div className=" bg-pink w-72 text-6xl">
                 <Link href="/">@dfxe</Link>
               </div>
-              <button onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}>
+              <button
+                role="button"
+                onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
+              >
                 <svg
                   data-name="Layer 3"
                   xmlns="http://www.w3.org/2000/svg"

@@ -96,6 +96,7 @@ const LeftPushNavbar = () => {
             <Link href="/">@dfxe</Link>
           </div>
           <button
+            role="button"
             className="mr-4"
             onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
           >
