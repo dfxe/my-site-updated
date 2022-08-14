@@ -16,7 +16,7 @@ const AvailableCard = () => {
     "November",
     "December",
   ];
-  4;
+
   //FIX: time zone issue, currentDay not updating at midnight
   const [availabilityDates, setAvailabilityDates] = useState({
     currentDay:
@@ -34,7 +34,7 @@ const AvailableCard = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="text-5xl">{availabilityDates.currentMonth}</div>
 
-        <div className="text-[8rem]">{availabilityDates.currentDay}</div>
+        <div className="text-[7rem]">{availabilityDates.currentDay}</div>
       </div>
 
       <div
