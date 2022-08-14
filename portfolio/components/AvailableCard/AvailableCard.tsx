@@ -32,12 +32,13 @@ const AvailableCard = () => {
   return (
     <Card additionalStyles="bg-card-primary">
       <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl">{availabilityDates.currentMonth}</div>
-        <div className="text-6xl">{availabilityDates.currentDay}</div>
+        <div className="text-5xl">{availabilityDates.currentMonth}</div>
+
+        <div className="text-[8rem]">{availabilityDates.currentDay}</div>
       </div>
-      <br></br>
+
       <div
-        className="text-center text-4xl 2xl:text-6xl font-extrabold text-transparent
+        className="text-center text-5xl 2xl:text-6xl font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
            from-pink to-red"
       >

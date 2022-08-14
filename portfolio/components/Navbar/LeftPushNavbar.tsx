@@ -24,7 +24,7 @@ const LeftPushNavbar = () => {
           anime({
             targets: "nav",
             //from-to
-            width: "120%",
+            width: "130%",
 
             duration: 500,
             easing: "easeInOutQuad",
