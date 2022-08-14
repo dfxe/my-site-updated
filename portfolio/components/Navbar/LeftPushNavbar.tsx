@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import anime from "animejs";
 import { usePageContext } from "../Contexts/PageViewProvider";
+import Image from "next/image";
+import GithubIcon from "../../public/github.png";
 
 const LeftPushNavbar = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
@@ -95,22 +97,39 @@ const LeftPushNavbar = () => {
           <div className="bg-card-primary w-64 text-6xl border-2 pl-2">
             <Link href="/">d9u</Link>
           </div>
-          <button
-            aria-label="Navigation"
-            role="button"
-            className="mr-4"
-            onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
-          >
-            <svg
-              data-name="Layer 3"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 128 128"
-              width="3rem"
-              height="3rem"
+
+          <div className="flex items-center cursor-pointer">
+            <Link
+              href="https://github.com/dfxe"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <path d="M97.092 36.078H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zm0 25.811H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zm0 25.811H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222z" />
-            </svg>
-          </button>
+              <Image
+                src={GithubIcon}
+                alt="Github icon"
+                width={32}
+                height={32}
+              />
+            </Link>
+
+            <button
+              aria-label="Navigation"
+              role="button"
+              className="mr-4"
+              style={{ marginLeft: "1vw" }}
+              onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
+            >
+              <svg
+                data-name="Layer 3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128 128"
+                width="3rem"
+                height="3rem"
+              >
+                <path d="M97.092 36.078H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zm0 25.811H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zm0 25.811H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222z" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div
