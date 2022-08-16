@@ -92,7 +92,7 @@ const LeftPushNavbar = () => {
 
   return (
     <header>
-      <nav className="border-2">
+      <nav className="border-2 overflow-hidden">
         <div className="flex row justify-between">
           <div className="bg-card-primary w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2">
             <Link href="/">d9u</Link>
@@ -148,7 +148,7 @@ const LeftPushNavbar = () => {
               cursor-pointer py-10 text-center ${
                 isOnHeroPage.getter
                   ? "bg-card-primary-hover"
-                  : "bg-card-primary"
+                  : "bg-card-primary border-l-2 shadow-[-3px_0px_0px_0px_black]"
               } text-4xl hover:bg-card-primary-hover
               border-t-4
               `}
@@ -164,7 +164,9 @@ const LeftPushNavbar = () => {
             <p
               className={`
             cursor-pointer py-10 text-center ${
-              isOnHeroPage.getter ? "bg-card-primary" : "bg-card-primary-hover"
+              isOnHeroPage.getter
+                ? "bg-card-primary"
+                : "bg-card-primary-hover border-l-2 shadow-[-3px_0px_0px_0px_black]"
             } text-4xl hover:bg-card-primary-hover
             border-b-4 border-t-4
             `}

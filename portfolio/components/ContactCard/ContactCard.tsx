@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ContactCard = () => {
   return (
-    <Card additionalStyles={"bg-card-secondary"}>
+    <Card additionalStyles={"bg-card-secondary border-b-4"}>
       <p className="text-5xl mb-4 whitespace-normal lg:whitespace-nowrap font-extrabold text-center">
         Let&apos;s build something together.
       </p>

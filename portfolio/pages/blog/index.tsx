@@ -10,6 +10,7 @@ const Blog: NextPage = () => {
       <LeftPushNavbar></LeftPushNavbar>
       <br></br>
       <br></br>
+
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl">Blog</h1>
       </div>
@@ -30,6 +31,7 @@ const Blog: NextPage = () => {
           </Link>
         </p>
       </div>
+
       <Footer></Footer>
     </>
   );
