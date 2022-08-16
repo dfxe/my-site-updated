@@ -24,7 +24,8 @@ const Footer = () => {
         rel="noreferrer noopener"
         className="text-base font-extrabold text-transparent
            bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+           from-pink to-red
+           hover:underline ease-in duration-300"
       >
         Site source code.
       </a>

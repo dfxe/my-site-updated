@@ -97,7 +97,8 @@ const LeftPushNavbar = () => {
           <div
             className={`bg-card-primary ${
               isOnHeroPage.getter ? "" : "border-b-2"
-            } w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2`}
+            } w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2
+            hover:text-7xl ease-in duration-200`}
           >
             <Link href="/">d9u</Link>
           </div>
@@ -119,7 +120,7 @@ const LeftPushNavbar = () => {
             <button
               aria-label="Navigation"
               role="button"
-              className="mr-4"
+              className="mr-4 ease-in duration-200 hover:mr-5"
               style={{ marginLeft: "1vw" }}
               onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
             >

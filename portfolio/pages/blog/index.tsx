@@ -23,16 +23,15 @@ const Blog: NextPage = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="text-xl">22.06.22</span>
         </div>
-        <p className="text-4xl">
-          <Link href="/blog/post-one">
-            <div className="hover:bg-card-primary-hover cursor-pointer">
-              Labradors
-            </div>
-          </Link>
-        </p>
+
+        <Link href="/blog/post-one">
+          <p className="hover:bg-card-primary-hover underline decoration-2 hover:no-underline transition ease-in duration-300 text-4xl cursor-pointer">
+            Labradors
+          </p>
+        </Link>
       </div>
 
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
