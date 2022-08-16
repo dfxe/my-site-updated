@@ -94,7 +94,7 @@ const LeftPushNavbar = () => {
     <header>
       <nav className="border-2">
         <div className="flex row justify-between">
-          <div className="bg-card-primary w-64 text-6xl border-2 pl-2">
+          <div className="bg-card-primary w-64 text-6xl border-t-2 border-r-2 border-l-2 pl-2">
             <Link href="/">d9u</Link>
           </div>
 
@@ -141,7 +141,6 @@ const LeftPushNavbar = () => {
             width: "auto",
             position: "fixed",
           }}
-          className="children:border-2"
         >
           <Link href="/" onClickCapture={() => isOnHeroPage.setter(true)}>
             <p
@@ -151,6 +150,7 @@ const LeftPushNavbar = () => {
                   ? "bg-card-primary-hover"
                   : "bg-card-primary"
               } text-4xl hover:bg-card-primary-hover
+              border-t-4
               `}
               onClick={() => {
                 setShowMobileNavMenu(false);
@@ -166,6 +166,7 @@ const LeftPushNavbar = () => {
             cursor-pointer py-10 text-center ${
               isOnHeroPage.getter ? "bg-card-primary" : "bg-card-primary-hover"
             } text-4xl hover:bg-card-primary-hover
+            border-b-4 border-t-4
             `}
               onClick={() => {
                 setShowMobileNavMenu(false);
