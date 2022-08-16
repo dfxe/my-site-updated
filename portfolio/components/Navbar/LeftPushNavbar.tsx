@@ -94,7 +94,11 @@ const LeftPushNavbar = () => {
     <header>
       <nav className="border-2 overflow-hidden">
         <div className="flex row justify-between">
-          <div className="bg-card-primary w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2">
+          <div
+            className={`bg-card-primary ${
+              isOnHeroPage.getter ? "" : "border-b-2"
+            } w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2`}
+          >
             <Link href="/">d9u</Link>
           </div>
 
