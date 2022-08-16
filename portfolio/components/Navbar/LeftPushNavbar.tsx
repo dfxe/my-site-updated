@@ -152,9 +152,9 @@ const LeftPushNavbar = () => {
               cursor-pointer py-10 text-center ${
                 isOnHeroPage.getter
                   ? "bg-card-primary-hover"
-                  : "bg-card-primary border-l-2 shadow-[-3px_0px_0px_0px_black]"
+                  : "bg-card-primary"
               } text-4xl hover:bg-card-primary-hover
-              border-t-4
+              border-t-2
               `}
               onClick={() => {
                 setShowMobileNavMenu(false);
@@ -168,11 +168,9 @@ const LeftPushNavbar = () => {
             <p
               className={`
             cursor-pointer py-10 text-center ${
-              isOnHeroPage.getter
-                ? "bg-card-primary"
-                : "bg-card-primary-hover border-l-2 shadow-[-3px_0px_0px_0px_black]"
+              isOnHeroPage.getter ? "bg-card-primary" : "bg-card-primary-hover"
             } text-4xl hover:bg-card-primary-hover
-            border-b-4 border-t-4
+            border-b-2 border-t-2
             `}
               onClick={() => {
                 setShowMobileNavMenu(false);
