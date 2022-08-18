@@ -12,6 +12,7 @@ const HeroImage = () => {
         width={1080}
         height={720}
         placeholder="blur"
+        objectFit="cover"
         priority
         quality={"95"}
       />
