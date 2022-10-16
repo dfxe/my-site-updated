@@ -22,7 +22,7 @@ const ContactCard = () => {
           className="text-xl text-transparent bg-clip-text bg-gradient-to-br
            from-pink to-red"
         >
-          <Obfuscate email="dfldev@proton.me" />{" "}
+          <Obfuscate email="dfldev at proton.me" />{" "}
         </li>
 
         <li className="cursor-pointer mt-2">
