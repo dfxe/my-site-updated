@@ -8,7 +8,7 @@ import AboutCard from "./AboutCard/AboutCard";
 import HeroImage from "./HeroImage/HeroImage";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import BackToTop from "./BackToTopButton/BackToTop";
-import { ParallaxProvider } from "react-scroll-parallax";
+
 import LeftPushNavbar from "./Navbar/LeftPushNavbar";
 
 const Portfolio = () => {
@@ -58,9 +58,9 @@ const Portfolio = () => {
         <div className="flex flex-col xl:flex-row">
           <BlogCard />
           {/* <ProjectCard /> */}
-          <ParallaxProvider>
-            <ShowcaseProjectCard />
-          </ParallaxProvider>
+
+          <ShowcaseProjectCard />
+
           <SkillsCard />
         </div>
 
