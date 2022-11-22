@@ -18,13 +18,6 @@ const ContactCard = () => {
       </p>
 
       <ul className="flex flex-col items-center mt-10">
-        <li
-          className="text-xl text-transparent bg-clip-text bg-gradient-to-br
-           from-pink to-red"
-        >
-          <Obfuscate email="dfldev at proton.me" />{" "}
-        </li>
-
         <li className="cursor-pointer mt-2">
           <Link
             href="https://github.com/dfxe"
