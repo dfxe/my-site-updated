@@ -1,16 +1,16 @@
 import Card from "../CardPrototypes/Card";
-import { nanoid } from "nanoid";
+
 const BlogCard = () => {
   const blogMeta = [
     {
-      id: nanoid(),
+      id: "p1dx",
       date: "22.06.22",
       path: "blog/post-one",
       title: "Labrador",
       shortDescription: "Homebuilding part two",
     },
     {
-      id: nanoid(),
+      id: "p1sd",
       date: "22.06.22",
       path: "blog/post-two",
       title: "Labrador",
@@ -28,7 +28,7 @@ const BlogCard = () => {
 
       <ul>
         {blogMeta.map((item, i) => (
-          <li key={nanoid()}>
+          <li key={i}>
             <div className="flex justify-between">
               <span>{i + 1}&nbsp;</span>
               <span>{item.date}</span>
