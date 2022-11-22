@@ -15,8 +15,8 @@ const AboutCard = () => {
           </span>{" "}
         </h1>
         <p className="text-xl text-center">
-          Frontend developer based in London. Customers have relied on me for
-          design and implementation.
+          Frontend developer based in London. Responsible for the design and
+          implementation of bespoke software.
         </p>
       </div>
     </Card>
