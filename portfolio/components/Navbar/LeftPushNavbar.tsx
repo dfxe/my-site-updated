@@ -83,6 +83,7 @@ const LeftPushNavbar = () => {
           //from-to
           left: "100%",
           width: "33vw",
+
           duration: 500,
           easing: "easeInOutQuad",
         });
