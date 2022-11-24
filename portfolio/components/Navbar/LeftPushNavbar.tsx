@@ -97,8 +97,8 @@ const LeftPushNavbar = () => {
         <div className="flex row justify-between">
           <div
             className={`bg-card-primary ${
-              isOnHeroPage.getter ? "" : "border-b-2"
-            } w-64 text-6xl border-t-2 border-r-4 border-b-2 border-l-2 pl-2
+              isOnHeroPage.getter ? "" : ""
+            } w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2
             hover:text-7xl ease-in duration-200`}
           >
             <Link href="/">d9u</Link>
