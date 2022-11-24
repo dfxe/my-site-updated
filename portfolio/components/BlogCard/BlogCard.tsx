@@ -25,7 +25,6 @@ const BlogCard = () => {
       >
         Blog Posts
       </h1>
-
       <ul>
         {blogMeta.map((item, i) => (
           <li key={i}>

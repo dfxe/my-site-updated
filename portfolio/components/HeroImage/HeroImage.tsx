@@ -5,16 +5,15 @@ import comingSoonPhoto from "./../../public/h3w.webp";
 const HeroImage = () => {
   return (
     //TODO fix blank space background issue
-    <NoPaddingCard additionalStyles="flex justify-center items-center">
+    <NoPaddingCard additionalStyles="relative flex justify-center items-center">
       <Image
         src={comingSoonPhoto}
         alt="A picture placeholder for a picture of me."
-        width={1080}
-        height={720}
+        style={{ objectFit: "cover" }}
+        fill
         placeholder="blur"
-        objectFit="cover"
         priority
-        quality={"95"}
+        quality={"90"}
       />
     </NoPaddingCard>
   );

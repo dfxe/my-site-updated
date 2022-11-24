@@ -30,7 +30,7 @@ const Portfolio = () => {
             background-color: #f7ebe1;
             color: black;
             font-size: 12px;
-            border-radius: 0 10px 10px 10px;
+            border-radius: 10px 10px 0 0;
             padding: 1em 1em 1em 1em;
             `,
           );
@@ -48,7 +48,6 @@ const Portfolio = () => {
         <LeftPushNavbar />
 
         <div className="flex flex-col lg:flex-row">
-          <HeroImage />
           <AboutCard />
 
           {/**TODO this has an time zone issue */}
