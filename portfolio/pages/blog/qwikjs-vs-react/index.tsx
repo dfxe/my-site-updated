@@ -20,22 +20,74 @@ const PostOne = () => {
   return (
     <>
       <BackLinkButton linkToPage={"/blog"} />
-      <div className="flex flex-col mx-4 xl:mx-96">
+      <div className="flex flex-col mx-4 mb-24 xl:mx-96">
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[1].title}</h1>
         <div className="flex justify-between mb-4">
           <p style={{ flex: "50%", textAlign: "justify" }}>
-            They had always called it the green river. It made sense. The river
-            was green. The river likely had a different official name, but to
-            everyone in town, it was and had always been the green river. So it
-            was with great surprise that on this day the green river was a
-            fluorescent pink.
+            <b>Setup</b>
+            <li className="list-square text-secondary">
+              I am using pnpm as a package manager, just to try it out.
+            </li>{" "}
+            <li className="list-square text-secondary">
+              Qwik comes with inbuilt Vite <br />{" "}
+            </li>
+            <li className="list-square text-secondary">
+              Qwik has TypeScript by default{" "}
+            </li>
+            <li className="list-square text-secondary">
+              Using pure css to because of compatibility{" "}
+            </li>
+            <br />
+            Deployment options:
+            <table>
+              <tr>
+                <th></th>
+                <th>Qwik</th>
+                <th>React</th>
+              </tr>
+              <tr>
+                <td className="font-bold"> Vercel</td>
+                <td>no</td>
+                <td>yes</td>
+              </tr>
+              <tr>
+                <td className="font-bold"> Netlify</td>
+                <td>?</td>
+                <td>yes</td>
+              </tr>
+
+              <tr>
+                <td className="font-bold"> Cloudflare Pages</td>
+                <td>yes</td>
+                <td>yes</td>
+              </tr>
+            </table>
+            <br />
           </p>
           <div className="mx-4 xl:mx-6"></div>
           <p style={{ flex: "50%", textAlign: "justify" }}>
-            Do you really listen when you are talking with someone? I have a
-            friend who listens in an unforgiving way. She actually takes every
-            word you say as being something important and when you have a friend
-            that listens like that, words take on a whole new meaning.
+            <b>Deploying to Cloudflare Pages</b> <br />
+            <li className="list-square text-secondary">
+              {" "}
+              Right now, you have to configure the backend to make it work. No
+              batteries included, the framework is still in some alpha state
+              when it comes to pre-configurations. Furthermore, esbuild minus
+              framework documentation result in wasted hours on type matching.{" "}
+              <br />
+            </li>
+            <li className="list-square text-secondary">
+              At the time of first attempting this (3 oct), the cloudflare pages
+              integration did not work properly and hacks did just brake
+              everything, that&apos;s all.
+            </li>
+            <li className="list-square text-secondary">
+              window:onLoad in Qwik replaces the window is undefined check
+              needed in dev environments in React
+            </li>
+            <li className="list-square text-secondary">
+              Cloudflare pages and wrangler (workers) has perfect integration
+              for this server side resumability loading
+            </li>
           </p>
         </div>
 
@@ -46,18 +98,26 @@ const PostOne = () => {
           }}
         >
           <p style={{ flex: "50%", textAlign: "justify" }}>
-            They had always called it the green river. It made sense. The river
-            was green. The river likely had a different official name, but to
-            everyone in town, it was and had always been the green river. So it
-            was with great surprise that on this day the green river was a
-            fluorescent pink.
+            <b>Differences</b>
+            <br />
+            <p className="text-secondary">
+              {" "}
+              No more key attribute when looping over a list, Qwik does that
+              automagically with q:id. <br />
+              It&apos;s about pockets of when things happen and not, current
+              build is buggy
+            </p>
           </p>
           <div className="mx-4 xl:mx-6"></div>
           <p style={{ flex: "50%", textAlign: "justify" }}>
-            Do you really listen when you are talking with someone? I have a
-            friend who listens in an unforgiving way. She actually takes every
-            word you say as being something important and when you have a friend
-            that listens like that, words take on a whole new meaning.
+            <b>Conclusion</b>
+            <br />{" "}
+            <p className="text-secondary">
+              This framework can have a promising future alongside React and
+              other React inspired frameworks. If initial load performance is
+              critical and you need to build a quick SSG site with a better
+              learning curve, this is for you.
+            </p>
           </p>
         </div>
       </div>

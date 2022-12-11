@@ -8,7 +8,7 @@ export const blogPosts = [
   },
   {
     id: "p1sd",
-    date: "22.06.22",
+    date: "03.10.22",
     path: "blog/qwikjs-vs-react",
     title: "QwikJS coming from React",
     shortDescription: "Distro avs?",

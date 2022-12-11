@@ -24,11 +24,10 @@ const PostOne = () => {
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[0].title}</h1>
         <div className="flex justify-between mb-4">
           <p style={{ flex: "50%", textAlign: "justify" }}>
-            They had always called it the green river. It made sense. The river
-            was green. The river likely had a different official name, but to
-            everyone in town, it was and had always been the green river. So it
-            was with great surprise that on this day the green river was a
-            fluorescent pink.
+            Starting with SPAMD <br /> 1. validation is off, prettier does not
+            work with unclosed tags <br />
+            2. after fixing the unclosed tags issues and more, let's see the
+            site (present the site)
           </p>
           <div className="mx-4 xl:mx-6"></div>
           <p style={{ flex: "50%", textAlign: "justify" }}>
