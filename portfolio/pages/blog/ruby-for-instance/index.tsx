@@ -35,11 +35,11 @@ const PostThree = () => {
               <br />
               <p className="text-secondary">
                 We&apos;ve all been there. We look for ways to quickly learn a
-                language and you start looking browsing the web for answers.
-                Question after question, request after request, each time. And
-                there you are, wanting to learn Ruby because developer time is
-                paramount, you want to build a website with a back-end quickly,
-                with a smoother learning curve that other frameworks.
+                new language and start browsing the web for answers. Question
+                after question, request after request, each time. And there you
+                are, wanting to learn Ruby because developer time is paramount,
+                you want to build a website with a back-end quickly, with a
+                smoother learning curve that other frameworks.
               </p>
             </p>
             <div className="mx-4 xl:mx-6"></div>
@@ -67,7 +67,7 @@ const PostThree = () => {
                 A quick guide connecting most features would be very helpful,
                 especially if you&apos;re coming from another language or have
                 forgotten some arcane feature that sounds good (I&apos;m looking
-                at you useful Python library 4460).
+                at you useful Python function from library no. 4460).
               </p>
             </p>
             <div className="mx-4 xl:mx-6"></div>
@@ -76,8 +76,8 @@ const PostThree = () => {
               <br />{" "}
               <p className="text-secondary">
                 Enter Ruby for Instance, a great short lexicon containing some
-                of the most used features of the Ruby language, directly in
-                code.
+                of the most commonly used features of the Ruby language,
+                directly in code.
               </p>
             </p>
           </div>
