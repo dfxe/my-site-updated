@@ -25,7 +25,7 @@ const Blog: NextPage = () => {
               <span className="text-xl text-secondary">{item.date}</span>
             </div>
             <Link href={item.path}>
-              <p className="text-4xl underline transition duration-300 ease-in cursor-pointer hover:bg-card-primary-hover decoration-2 hover:no-underline">
+              <p className="text-2xl underline transition duration-300 ease-in cursor-pointer hover:bg-card-primary-hover decoration-2 hover:no-underline">
                 {item.title}
               </p>
             </Link>

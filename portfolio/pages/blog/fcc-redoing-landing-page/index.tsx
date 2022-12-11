@@ -25,16 +25,22 @@ const PostOne = () => {
       <div className="flex flex-col mx-4 mb-24 xl:mx-96">
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[0].title}</h1>
         <p className="text-secondary">by dfxe</p>
-        <Link href="https://codepen.io/dfxe/full/rNMoRZb">
+        <Link href="https://codepen.io/dfxe/full/rNMoRZb" target={"_blank"}>
           See the webapp here.
         </Link>
         <div className="mt-4">
           <div className="flex justify-between mb-4">
             <p style={{ flex: "50%", textAlign: "justify" }}>
-              Starting with SPAMD <br /> 1. validation is off, prettier does not
-              work with unclosed tags <br />
+              I recently re-did my product landing page as part of the
+              freecodecamp curriculum. I wanted to make it more user-friendly
+              and visually appealing, so I spent some time redesigning the
+              layout and adding some new images and graphics. I also made sure
+              to optimize the page for mobile devices, as more and more people
+              are using their phones to browse the web. Starting with SPAMD{" "}
+              <br /> 1. validation is off, prettier does not work with unclosed
+              tags <br />
               2. after fixing the unclosed tags issues and more, let&apos;s see
-              the site (present the site)
+              the site
             </p>
             <div className="mx-4 xl:mx-6"></div>
             <Image
@@ -52,19 +58,21 @@ const PostOne = () => {
             }}
           >
             <p style={{ flex: "50%", textAlign: "justify" }}>
-              They had always called it the green river. It made sense. The
-              river was green. The river likely had a different official name,
-              but to everyone in town, it was and had always been the green
-              river. So it was with great surprise that on this day the green
-              river was a fluorescent pink.
+              Overall, I&apos;m really happy however there is room for
+              improvement. CSS is all good, however, a good styling framework
+              could save a lot of time. with the end result and I think
+              it&apos;s a huge improvement over the previous version of the
+              page.s day the green river was a fluorescent pink.
             </p>
             <div className="mx-4 xl:mx-6"></div>
-            <p style={{ flex: "50%", textAlign: "justify" }}>
-              Do you really listen when you are talking with someone? I have a
-              friend who listens in an unforgiving way. She actually takes every
-              word you say as being something important and when you have a
-              friend that listens like that, words take on a whole new meaning.
-            </p>
+            <Link href="https://codepen.io/dfxe/full/rNMoRZb" target={"_blank"}>
+              <Image
+                src="/spamd-2.png"
+                alt="image of the current spamd site"
+                width={500}
+                height={1000}
+              />
+            </Link>
           </div>
         </div>
       </div>

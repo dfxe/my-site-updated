@@ -27,6 +27,7 @@ const PostOne = () => {
         <Link href="https://github.com/dfxe/planningly-alpha">
           See the webapp here.
         </Link>
+
         <div className="mt-4">
           <div className="flex justify-between mb-4">
             <p style={{ flex: "50%", textAlign: "justify" }}>
