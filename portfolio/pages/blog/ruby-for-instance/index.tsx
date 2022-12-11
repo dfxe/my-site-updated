@@ -3,7 +3,7 @@ import BackLinkButton from "../../../components/BackLinkButton/BackLinkButton";
 import anime from "animejs";
 import { blogPosts } from "../../../lib/blog-posts";
 import Link from "next/link";
-const PostOne = () => {
+const PostThree = () => {
   useEffect(() => {
     if (typeof window != "undefined") {
       document.documentElement.style.left = "0px";
@@ -22,7 +22,7 @@ const PostOne = () => {
     <>
       <BackLinkButton linkToPage={"/blog"} />
       <div className="flex flex-col mx-4 mb-24 xl:mx-96">
-        <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[1].title}</h1>
+        <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[2].title}</h1>
         <p className="text-secondary">by dfxe</p>
         <Link href="https://github.com/dfxe/planningly-alpha">
           See the webapp here.
@@ -131,4 +131,4 @@ const PostOne = () => {
     </>
   );
 };
-export default PostOne;
+export default PostThree;

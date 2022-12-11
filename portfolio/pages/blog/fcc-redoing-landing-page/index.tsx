@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import BackLinkButton from "../../../components/BackLinkButton/BackLinkButton";
 import anime from "animejs";
 import { blogPosts } from "../../../lib/blog-posts";
+import Image from "next/image";
+import Link from "next/link";
 const PostOne = () => {
   useEffect(() => {
     if (typeof window != "undefined") {
@@ -20,44 +22,50 @@ const PostOne = () => {
   return (
     <>
       <BackLinkButton linkToPage={"/blog"} />
-      <div className="flex flex-col mx-4 xl:mx-96">
+      <div className="flex flex-col mx-4 mb-24 xl:mx-96">
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[0].title}</h1>
-        <div className="flex justify-between mb-4">
-          <p style={{ flex: "50%", textAlign: "justify" }}>
-            Starting with SPAMD <br /> 1. validation is off, prettier does not
-            work with unclosed tags <br />
-            2. after fixing the unclosed tags issues and more, let's see the
-            site (present the site)
-          </p>
-          <div className="mx-4 xl:mx-6"></div>
-          <p style={{ flex: "50%", textAlign: "justify" }}>
-            Do you really listen when you are talking with someone? I have a
-            friend who listens in an unforgiving way. She actually takes every
-            word you say as being something important and when you have a friend
-            that listens like that, words take on a whole new meaning.
-          </p>
-        </div>
+        <p className="text-secondary">by dfxe</p>
+        <Link href="https://codepen.io/dfxe/full/rNMoRZb">
+          See the webapp here.
+        </Link>
+        <div className="mt-4">
+          <div className="flex justify-between mb-4">
+            <p style={{ flex: "50%", textAlign: "justify" }}>
+              Starting with SPAMD <br /> 1. validation is off, prettier does not
+              work with unclosed tags <br />
+              2. after fixing the unclosed tags issues and more, let&apos;s see
+              the site (present the site)
+            </p>
+            <div className="mx-4 xl:mx-6"></div>
+            <Image
+              src="/spamd.png"
+              alt="image of the previous spamd site"
+              width={500}
+              height={700}
+            />
+          </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <p style={{ flex: "50%", textAlign: "justify" }}>
-            They had always called it the green river. It made sense. The river
-            was green. The river likely had a different official name, but to
-            everyone in town, it was and had always been the green river. So it
-            was with great surprise that on this day the green river was a
-            fluorescent pink.
-          </p>
-          <div className="mx-4 xl:mx-6"></div>
-          <p style={{ flex: "50%", textAlign: "justify" }}>
-            Do you really listen when you are talking with someone? I have a
-            friend who listens in an unforgiving way. She actually takes every
-            word you say as being something important and when you have a friend
-            that listens like that, words take on a whole new meaning.
-          </p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <p style={{ flex: "50%", textAlign: "justify" }}>
+              They had always called it the green river. It made sense. The
+              river was green. The river likely had a different official name,
+              but to everyone in town, it was and had always been the green
+              river. So it was with great surprise that on this day the green
+              river was a fluorescent pink.
+            </p>
+            <div className="mx-4 xl:mx-6"></div>
+            <p style={{ flex: "50%", textAlign: "justify" }}>
+              Do you really listen when you are talking with someone? I have a
+              friend who listens in an unforgiving way. She actually takes every
+              word you say as being something important and when you have a
+              friend that listens like that, words take on a whole new meaning.
+            </p>
+          </div>
         </div>
       </div>
     </>
