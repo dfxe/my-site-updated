@@ -13,7 +13,7 @@ const Footer = () => {
           rel="noreferrer noopener"
           className="text-base font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink to-red"
         >
-          @dfxe
+          dfxe
         </a>
       </div>
       <a

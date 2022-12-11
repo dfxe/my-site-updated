@@ -12,7 +12,7 @@ const ContactCard = () => {
         Let&apos;s build something together
       </p>
 
-      <p className="text-lg text-center">
+      <p className="text-lg text-center text-secondary">
         Feel free to reach out if you are looking for a frontend developer,
         <br></br> have a question or just want to connect.
       </p>

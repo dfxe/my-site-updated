@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import BackLinkButton from "../../../components/BackLinkButton/BackLinkButton";
 import anime from "animejs";
+import { blogPosts } from "../../../lib/blog-posts";
 const PostOne = () => {
   useEffect(() => {
     if (typeof window != "undefined") {
@@ -20,7 +21,7 @@ const PostOne = () => {
     <>
       <BackLinkButton linkToPage={"/blog"} />
       <div className="flex flex-col mx-4 xl:mx-96">
-        <h1 className="my-5 text-4xl xl:text-8xl">Rows & Columns</h1>
+        <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[1].title}</h1>
         <div className="flex justify-between mb-4">
           <p style={{ flex: "50%", textAlign: "justify" }}>
             They had always called it the green river. It made sense. The river

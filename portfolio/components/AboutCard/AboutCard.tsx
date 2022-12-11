@@ -10,7 +10,7 @@ const AboutCard = () => {
             Dragos
           </span>{" "}
         </h1>
-        <p className="mx-4 text-xl text-center lg:mx-56">
+        <p className="mx-4 text-xl text-center lg:mx-56 text-secondary">
           Frontend developer based in London. Responsible for the design and
           implementation of bespoke software.
         </p>
