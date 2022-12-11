@@ -8,8 +8,8 @@ import Link from "next/link";
 const ContactCard = () => {
   return (
     <Card additionalStyles={"bg-card-secondary border-b-4"}>
-      <p className="text-5xl mb-4 whitespace-normal lg:whitespace-nowrap font-extrabold text-center">
-        Let&apos;s build something together.
+      <p className="mb-4 text-5xl font-extrabold text-center whitespace-normal lg:whitespace-nowrap">
+        Let&apos;s build something together
       </p>
 
       <p className="text-lg text-center">
@@ -18,7 +18,7 @@ const ContactCard = () => {
       </p>
 
       <ul className="flex flex-col items-center mt-10">
-        <li className="cursor-pointer mt-2">
+        <li className="mt-2 cursor-pointer">
           <Link
             href="https://github.com/dfxe"
             target="_blank"

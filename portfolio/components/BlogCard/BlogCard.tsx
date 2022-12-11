@@ -1,45 +1,25 @@
 import Card from "../CardPrototypes/Card";
-
+import { blogPosts } from "../../lib/blog-posts";
 const BlogCard = () => {
-  const blogMeta = [
-    {
-      id: "p1dx",
-      date: "22.06.22",
-      path: "blog/post-one",
-      title: "Labrador",
-      shortDescription: "Homebuilding part two",
-    },
-    {
-      id: "p1sd",
-      date: "22.06.22",
-      path: "blog/post-two",
-      title: "Labrador",
-      shortDescription: "Distro avs?",
-    },
-  ];
   return (
     <Card additionalStyles="border-b-2 bg-card-secondary">
-      <h1
-        className="text-5xl font-extrabold text-center
-            mb-20 whitespace-nowrap"
-      >
+      <h1 className="mb-20 text-5xl font-extrabold text-center whitespace-nowrap">
         Blog Posts
       </h1>
       <ul>
-        {blogMeta.map((item, i) => (
+        {blogPosts.map((item, i) => (
           <li key={i}>
             <div className="flex justify-between">
-              <span>{i + 1}&nbsp;</span>
-              <span>{item.date}</span>
+              <span className="text-secondary">{i + 1}&nbsp;</span>
+              <span className="text-secondary">{item.date}</span>
             </div>
             <a href={item.path}>
-              <p
-                className="text-2xl bg-clip-text bg-gradient-to-br text-transparent
-           from-pink to-red"
-              >
+              <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink to-red">
                 | {item.title}
               </p>
-              <h4 className="text-xl">{item.shortDescription}</h4>
+              <h4 className="text-xl text-secondary">
+                {item.shortDescription}
+              </h4>
             </a>
             <br />
           </li>

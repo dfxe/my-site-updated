@@ -11,21 +11,16 @@ const Footer = () => {
           href="https://www.github.com/dfxe"
           target="_blank"
           rel="noreferrer noopener"
-          className="text-base font-extrabold text-transparent
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+          className="text-base font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink to-red"
         >
           @dfxe
         </a>
       </div>
       <a
-        href="https://www.github.com"
+        href="https://github.com/dfxe/my-site-updated"
         target="_blank"
         rel="noreferrer noopener"
-        className="text-base font-extrabold text-transparent
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red
-           hover:underline ease-in duration-300"
+        className="text-base font-extrabold text-transparent duration-300 ease-in bg-clip-text bg-gradient-to-br from-pink to-red hover:underline"
       >
         Site source code.
       </a>

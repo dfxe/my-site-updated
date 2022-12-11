@@ -23,6 +23,7 @@ module.exports = {
       redpeach: "#c94c67",
       nextred: "#e95076",
       "text-gradient-primary": "#f7ebe1",
+      secondary: "#555",
       "text-gradient-secondary": "#faaa",
     },
     fontFamily: {
