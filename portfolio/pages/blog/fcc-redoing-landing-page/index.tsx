@@ -26,17 +26,19 @@ const PostOne = () => {
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[0].title}</h1>
         <p className="text-secondary">by dfxe</p>
         <Link href="https://codepen.io/dfxe/full/rNMoRZb" target={"_blank"}>
-          See the webapp here.
+          See the SPAMD site here.
         </Link>
         <div className="mt-4">
           <div className="flex justify-between mb-4">
             <p style={{ flex: "50%", textAlign: "justify" }}>
+              <b>Starting with SPAMD </b>
+              <br />
               I recently re-did my product landing page as part of the
               freecodecamp curriculum. I wanted to make it more user-friendly
               and visually appealing, so I spent some time redesigning the
               layout and adding some new images and graphics. I also made sure
               to optimize the page for mobile devices, as more and more people
-              are using their phones to browse the web. Starting with SPAMD{" "}
+              are using their phones to browse the web.
               <br /> 1. validation is off, prettier does not work with unclosed
               tags <br />
               2. after fixing the unclosed tags issues and more, let&apos;s see
@@ -58,6 +60,8 @@ const PostOne = () => {
             }}
           >
             <p style={{ flex: "50%", textAlign: "justify" }}>
+              <b>Result</b>
+              <br />
               Overall, I&apos;m really happy however there is room for
               improvement. CSS is all good, however, a good styling framework
               could save a lot of time. with the end result and I think

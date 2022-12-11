@@ -24,14 +24,21 @@ const PostOne = () => {
       <div className="flex flex-col mx-4 mb-24 xl:mx-96">
         <h1 className="my-5 text-2xl xl:text-6xl">{blogPosts[1].title}</h1>
         <p className="text-secondary">by dfxe</p>
-        <Link href="https://github.com/dfxe/planningly-alpha">
+        <Link href="https://planningly-alpha.pages.dev/" target="_blank">
           See the webapp here.
+        </Link>
+        <Link href="https://github.com/dfxe/planningly-alpha" target={"_blank"}>
+          Check out the source code.
         </Link>
 
         <div className="mt-4">
           <div className="flex justify-between mb-4">
             <p style={{ flex: "50%", textAlign: "justify" }}>
               <b>Setup</b>
+              <li className="list-square text-secondary">
+                I am building a time planning app with a visual component on
+                top.
+              </li>
               <li className="list-square text-secondary">
                 I am using pnpm as a package manager, just to try it out.
               </li>{" "}
