@@ -11,10 +11,10 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      background: "#f4f6f6",
+      background: "white",
       "card-primary": "#f7ebe1",
       "card-primary-hover": "#f7ebbf",
-      "card-secondary": "#f4f6f6",
+      "card-secondary": "white",
       "card-important": "#1a1a1a",
       transparent: "transparent",
       pink: "#d18462",
