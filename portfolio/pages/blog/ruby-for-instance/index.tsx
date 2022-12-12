@@ -47,6 +47,7 @@ const PostThree = () => {
               <Image
                 src="/ruby-fi.png"
                 alt="image of the previous spamd site"
+                placeholder="blur"
                 width={500}
                 height={700}
               />
