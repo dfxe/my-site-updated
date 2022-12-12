@@ -10,7 +10,6 @@ const BackLinkButton = ({ linkToPage }: Props): ReactElement => {
         aria-label="Back"
         role="button"
         style={{
-          backgroundColor: "white",
           width: "6rem",
           height: "6rem",
           display: "flex",

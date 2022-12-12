@@ -48,7 +48,6 @@ const PostOne = () => {
             <Image
               src="/spamd.png"
               alt="image of the previous spamd site"
-              placeholder="blur"
               width={500}
               height={700}
             />
@@ -74,7 +73,6 @@ const PostOne = () => {
               <Image
                 src="/spamd-2.png"
                 alt="image of the current spamd site"
-                placeholder="blur"
                 width={500}
                 height={1000}
               />
