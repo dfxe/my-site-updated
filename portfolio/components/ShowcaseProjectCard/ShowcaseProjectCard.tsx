@@ -8,7 +8,7 @@ const ShowcaseProjectCard = () => {
   const { ref: parallaxRef } = useParallax({ speed: 4 });
   return (
     <NoPaddingCard additionalStyles={"bg-[white]"}>
-      <div className="bg-[white] p-12 text-title text-center">
+      <div className="bg-[white] p-12 text-title text-center font-bold">
         Showcase Project
       </div>
       <Link
