@@ -7,7 +7,7 @@ import { useParallax } from "react-scroll-parallax";
 const ShowcaseProjectCard = () => {
   const { ref: parallaxRef } = useParallax({ speed: 4 });
   return (
-    <NoPaddingCard additionalStyles={"bg-[#f8fafb]"}>
+    <NoPaddingCard additionalStyles={"bg-[white]"}>
       <Link
         href="https://web-agency-calculator.vercel.app/"
         target={"_blank"}
