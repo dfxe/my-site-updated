@@ -65,8 +65,7 @@ const PostOne = () => {
               Overall, I&apos;m really happy however there is room for
               improvement. CSS is all good, however, a good styling framework
               could save a lot of time. with the end result and I think
-              it&apos;s a huge improvement over the previous version of the
-              page.s day the green river was a fluorescent pink.
+              it&apos;s a huge improvement over the previous version of the page.
             </p>
             <div className="mx-4 xl:mx-6"></div>
             <Link href="https://codepen.io/dfxe/full/rNMoRZb" target={"_blank"}>
