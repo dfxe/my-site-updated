@@ -45,7 +45,7 @@ const PostThree = () => {
             <div className="mx-4 xl:mx-6"></div>
             <Link href="https://ruby-mid.pages.dev/" target={"_blank"}>
               <Image
-                src="/ruby-fi.png"
+                src="/ruby-fi.webp"
                 alt="image of the previous spamd site"
                 width={500}
                 height={700}
