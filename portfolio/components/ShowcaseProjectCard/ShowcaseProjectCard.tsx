@@ -1,6 +1,6 @@
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
-import patternbayImage from "../../public/patternbay.png";
+import showcaseImage from "../../public/web-agency-calculateur.png";
 import Link from "next/link";
 import { useParallax } from "react-scroll-parallax";
 
@@ -9,7 +9,7 @@ const ShowcaseProjectCard = () => {
   return (
     <NoPaddingCard additionalStyles={"bg-[#f8fafb]"}>
       <Link
-        href="https://patternbay.vercel.app/"
+        href="https://web-agency-calculator.vercel.app/"
         target={"_blank"}
         rel="noopener noreferrer"
         style={{ zIndex: 9999 }}
@@ -18,7 +18,7 @@ const ShowcaseProjectCard = () => {
         {/*@ts-ignore*/}
         <div ref={parallaxRef}>
           <Image
-            src={patternbayImage}
+            src={showcaseImage}
             alt="The showcase project, patternbay."
             style={{
               zIndex: 9999,

@@ -10,6 +10,7 @@ import SkillsCard from "./SkillsCard/SkillsCard";
 import BackToTop from "./BackToTopButton/BackToTop";
 import { ParallaxProvider } from "react-scroll-parallax";
 import LeftPushNavbar from "./Navbar/LeftPushNavbar";
+import OtherProjects from "./OtherProjects/OtherProjects";
 
 const Portfolio = () => {
   const setEasterEgg = setInterval(() => {
@@ -62,8 +63,10 @@ const Portfolio = () => {
           </ParallaxProvider>
           <SkillsCard />
         </div>
-
-        <ContactCard />
+        <div className="flex flex-col xl:flex-row">
+          <OtherProjects />
+          <ContactCard />
+        </div>
         <Footer></Footer>
       </div>
     </div>
