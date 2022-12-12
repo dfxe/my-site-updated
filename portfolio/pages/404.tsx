@@ -29,7 +29,7 @@ export default function FourOhFour() {
         <p className="mt-4 text-gray-500">We can&apos;t find that page.</p>
         <Link
           href="/"
-          className="inline-block px-12 py-3 mt-8 text-base font-medium text-white bg-black rounded-lg hover:bg-orange-400 focus:outline-none focus:ring"
+          className="inline-block px-12 py-3 mt-8 text-base font-medium text-white bg-[black] rounded-lg hover:bg-[#fb923c] focus:outline-none focus:ring"
         >
           Go back
         </Link>
