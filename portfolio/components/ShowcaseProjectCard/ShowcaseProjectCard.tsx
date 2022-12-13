@@ -12,7 +12,7 @@ const ShowcaseProjectCard = () => {
         Showcase Project
       </div>
       <Link
-        href="https://web-agency-calculator.vercel.app/"
+        href="https://siteify.io/"
         target={"_blank"}
         rel="noopener noreferrer"
         style={{ zIndex: 9999 }}
