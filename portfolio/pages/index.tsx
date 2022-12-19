@@ -13,10 +13,11 @@ const Home: NextPage = () => {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <PageViewProvider>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === "production" ? (
           <WorkInProgress></WorkInProgress>
+        ) : (
+          <Portfolio />
         )}
-        <Portfolio />
       </PageViewProvider>
     </>
   );
