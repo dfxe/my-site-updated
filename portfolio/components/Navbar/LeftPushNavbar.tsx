@@ -93,10 +93,10 @@ const LeftPushNavbar = () => {
 
   return (
     <header>
-      <nav className="border-2 overflow-hidden">
-        <div className="flex row justify-between">
+      <nav className="overflow-hidden border-2">
+        <div className="flex justify-between row">
           <div
-            className={`bg-card-primary ${
+            className={` ${
               isOnHeroPage.getter ? "" : ""
             } w-64 text-6xl border-t-2 border-r-4 border-l-2 pl-2
             hover:text-7xl ease-in duration-200`}
@@ -121,7 +121,7 @@ const LeftPushNavbar = () => {
             <button
               aria-label="Navigation"
               role="button"
-              className="mr-4 ease-in duration-200 hover:mr-5"
+              className="mr-4 duration-200 ease-in hover:mr-5"
               style={{ marginLeft: "1vw" }}
               onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
             >

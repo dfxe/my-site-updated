@@ -30,17 +30,15 @@ const AvailableCard = () => {
   });
 
   return (
-    <Card additionalStyles="bg-card-primary">
-      <div className="flex flex-col justify-center items-center">
+    <Card>
+      <div className="flex flex-col items-center justify-center">
         <div className="text-5xl">{availabilityDates.currentMonth}</div>
 
         <div className="text-[7rem]">{availabilityDates.currentDay}</div>
       </div>
 
       <div
-        className="text-center text-5xl 2xl:text-6xl font-extrabold text-transparent
-           bg-clip-text bg-gradient-to-br
-           from-pink to-red"
+        className="text-5xl font-extrabold text-center text-transparent 2xl:text-6xl bg-clip-text bg-gradient-to-br from-pink to-red"
       >
         {availabilityDates.availableNow}
       </div>
