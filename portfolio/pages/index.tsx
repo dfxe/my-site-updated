@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <PageViewProvider>
         {process.env.NODE_ENV === "production" ? (
-          <WorkInProgress></WorkInProgress>
+          <WorkInProgress />
         ) : (
           <Portfolio />
         )}

@@ -45,30 +45,6 @@ const Portfolio = () => {
   return (
     <div>
       <BackToTop yLimit={300} mobileSizeMax={1024} />
-      <div id="the-rest-of-the-page">
-        <LeftPushNavbar />
-
-        <div className="flex flex-col lg:flex-row">
-          <AboutCard />
-
-          {/**TODO this has an time zone issue */}
-          <AvailableCard />
-        </div>
-
-        <div className="flex flex-col xl:flex-row">
-          <BlogCard />
-          {/* <ProjectCard /> */}
-          <ParallaxProvider>
-            <ShowcaseProjectCard />
-          </ParallaxProvider>
-          <SkillsCard />
-        </div>
-        <div className="flex flex-col xl:flex-row">
-          <OtherProjects />
-          <ContactCard />
-        </div>
-        <Footer></Footer>
-      </div>
     </div>
   );
 };
