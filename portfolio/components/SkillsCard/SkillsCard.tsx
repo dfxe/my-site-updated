@@ -3,7 +3,7 @@ import Card from "../CardPrototypes/Card";
 const SkillsCard = () => {
   return (
     <Card additionalStyles={"border-b-2 bg-card-important"}>
-      <h1 className="text-5xl whitespace-normal lg:whitespace-nowrap font-extrabold text-background text-center mb-4">
+      <h1 className="mb-4 text-5xl font-extrabold text-center whitespace-normal lg:whitespace-nowrap text-background">
         Skills
       </h1>
 
@@ -15,6 +15,7 @@ const SkillsCard = () => {
 
         <li>Python</li>
         <li>.NET</li>
+        <li>Linux</li>
       </ul>
     </Card>
   );
