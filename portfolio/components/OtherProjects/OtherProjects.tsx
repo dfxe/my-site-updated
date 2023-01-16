@@ -12,6 +12,15 @@ const OtherProjects = () => {
         <li>
           <Link
             href="
+https://patternbay.vercel.app/"
+            target={"_blank"}
+          >
+            Pattern Bay
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="
 https://yordle.pages.dev/"
             target={"_blank"}
           >
