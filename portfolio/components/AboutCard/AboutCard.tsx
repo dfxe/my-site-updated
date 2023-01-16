@@ -11,8 +11,8 @@ const AboutCard = () => {
           </span>{" "}
         </h1>
         <p className="mx-4 text-xl text-center lg:mx-56 text-secondary">
-          Frontend developer based in London. Responsible for the design and
-          implementation of bespoke software.
+          Frontend Developer based in London.<br/> Responsible for the design and
+          implementation of <b>bespoke</b> software.
         </p>
       </div>
     </Card>

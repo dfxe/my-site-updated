@@ -98,7 +98,7 @@ const LeftPushNavbar = () => {
           <div
             className={` ${
               isOnHeroPage.getter ? "" : ""
-            } w-64 text-6xl border-t-2 font-bold border-r-4 text-special-black text-center border-l-2 pl-2
+            } w-96 text-6xl border-t-2 font-bold border-r-4 text-nicer-black text-center border-l-2
             hover:text-7xl ease-in duration-200`}
           >
             <Link href="/">Dragos</Link>

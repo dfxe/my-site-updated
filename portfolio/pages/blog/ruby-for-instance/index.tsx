@@ -39,7 +39,7 @@ const PostThree = () => {
                 after question, request after request, each time. And there you
                 are, wanting to learn Ruby because developer time is paramount,
                 you want to build a website with a back-end quickly, with a
-                smoother learning curve that other frameworks.
+                smoother learning curve than other frameworks.
               </p>
             </p>
             <div className="mx-4 xl:mx-6"></div>
