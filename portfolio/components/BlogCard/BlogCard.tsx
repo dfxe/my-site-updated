@@ -13,15 +13,17 @@ const BlogCard = () => {
               <span className="text-secondary">{i + 1}&nbsp;</span>
               <span className="text-secondary">{item.date}</span>
             </div>
-            <a href={item.path}>
-              <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink to-red">
-                | {item.title}
-              </p>
-              <h4 className="text-xl text-secondary">
-                {item.shortDescription}
-              </h4>
-            </a>
-            <br />
+            <div>
+              <a href={item.path}>
+                <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink to-red">
+                  | {item.title}
+                </p>
+                <h4 className="text-xl text-secondary">
+                  {item.shortDescription}
+                </h4>
+              </a>
+              <br />
+            </div>
           </li>
         ))}
       </ul>

@@ -98,8 +98,8 @@ const LeftPushNavbar = () => {
           <div
             className={` ${
               isOnHeroPage.getter ? "" : ""
-            } w-96 text-6xl border-t-2 font-bold border-r-4 text-nicer-black text-center border-l-2
-            hover:text-7xl ease-in duration-200`}
+            } w-72 text-6xl border-t-0 font-bold border-r-2 text-nicer-black text-center border-l-0
+            hover:text-7xl ease-in duration-200 z-10`}
           >
             <Link href="/">Dragos</Link>
           </div>
@@ -109,6 +109,7 @@ const LeftPushNavbar = () => {
               href="https://github.com/dfxe"
               target="_blank"
               rel="noopener noreferrer"
+              className="hidden lg:block"
             >
               <Image
                 src={GithubIcon}
@@ -122,7 +123,7 @@ const LeftPushNavbar = () => {
               aria-label="Navigation"
               role="button"
               className="mr-4 duration-200 ease-in hover:mr-5"
-              style={{ marginLeft: "1vw" }}
+
               onClick={() => setShowMobileNavMenu(!showMobileNavMenu)}
             >
               <svg
