@@ -6,7 +6,7 @@ import { blogPosts } from "../../lib/blog-posts";
 const Blog: NextPage = () => {
   return (
     <>
-      <title>Dragos&apos; blog</title>
+      <title>Dragos&apos;s blog</title>
       <LeftPushNavbar></LeftPushNavbar>
       <br></br>
       <br></br>
