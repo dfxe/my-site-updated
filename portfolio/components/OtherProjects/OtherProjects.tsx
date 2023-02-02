@@ -11,16 +11,6 @@ const OtherProjects = () => {
         <li>
           <a
             href="
-https://patternbay.vercel.app/"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            Pattern Bay
-          </a>
-        </li>
-        <li>
-          <a
-            href="
 https://yordle.pages.dev/"
             target={"_blank"}
             rel="noopener noreferrer"
@@ -55,6 +45,16 @@ https://yordle.pages.dev/"
             rel="noopener noreferrer"
           >
             Ruby for Instance
+          </a>
+        </li>
+        <li>
+          <a
+            href="
+https://patternbay.vercel.app/"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            Pattern Bay
           </a>
         </li>
       </ul>
