@@ -142,7 +142,7 @@ const LeftPushNavbar = () => {
         <div
           id="the-nav-children-els"
           style={{
-            display: showMobileNavMenu ? "flex" : "none",
+            display: showMobileNavMenu ? "flex" : "hidden",
             flexDirection: "column",
             zIndex: -10,
             width: "auto",
