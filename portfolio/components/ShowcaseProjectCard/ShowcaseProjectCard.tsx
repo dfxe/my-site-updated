@@ -1,7 +1,7 @@
 import NoPaddingCard from "../CardPrototypes/NoPaddingCard";
 import Image from "next/image";
 import showcaseImage from "../../public/web-agency-calculateur.png";
-import Link from "next/link";
+
 import { useParallax } from "react-scroll-parallax";
 
 const ShowcaseProjectCard = () => {
@@ -11,7 +11,7 @@ const ShowcaseProjectCard = () => {
       <div className="bg-[white] p-12 text-title text-center font-bold">
         Showcase Project
       </div>
-      <Link
+      <a
         href="https://siteify.io/"
         target={"_blank"}
         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const ShowcaseProjectCard = () => {
             quality={"95"}
           />
         </div>
-      </Link>
+      </a>
     </NoPaddingCard>
   );
 };

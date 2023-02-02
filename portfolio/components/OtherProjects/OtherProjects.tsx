@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Card from "../CardPrototypes/Card";
 
 const OtherProjects = () => {
@@ -10,45 +9,53 @@ const OtherProjects = () => {
 
       <ul className=" children:text-background children:text-xl list-square">
         <li>
-          <Link
+          <a
             href="
 https://patternbay.vercel.app/"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             Pattern Bay
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="
 https://yordle.pages.dev/"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             Yordle
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="
           https://handsify.pages.dev"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             Handsify
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="
             https://c-b-analysis-expert.vercel.app/"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             Cost Benefit Analysis interface
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="https://ruby-mid.pages.dev/" target={"_blank"}>
+          <a
+            href="https://ruby-mid.pages.dev/"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             Ruby for Instance
-          </Link>
+          </a>
         </li>
       </ul>
     </Card>
