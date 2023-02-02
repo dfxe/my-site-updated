@@ -1,3 +1,10 @@
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self';
+  child-src dragos.vercel.app;
+  style-src 'self' dragos.vercel.app;
+  font-src 'self';
+`;
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -26,6 +33,10 @@ const securityHeaders = [
   {
     key: "Referrer-Policy",
     value: "no-referrer-when-downgrade",
+  },
+  {
+    key: "Content-Security-Policy",
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),
   },
 ];
 module.exports = {
